@@ -20,7 +20,7 @@ Description: "Represents the full episode of cancer care for a patient, linking 
 * diagnosis.condition 1..1 MS
 * diagnosis.condition only Reference(OncologyDiagnosisCondition)
 * diagnosis.role 0..1 MS
-* diagnosis.role from http://hl7.org/fhir/ValueSet/diagnosis-role (extensible)
+* diagnosis.role from http://hl7.org/fhir/ValueSet/diagnosis-role (required)
 * diagnosis.rank 0..1 MS
 * patient 1..1 MS
 * patient only Reference(Patient)
@@ -45,7 +45,7 @@ Description: "An oncology clinical encounter (treatment session, diagnostic visi
 * status 1..1 MS
 * status from $VS_ENCOUNTER_STATUS (required)
 * class 1..1 MS
-* class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
+* class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (required)
 * type 1..* MS
 * type from OncologyEncounterTypeVS (required)
 * subject 1..1 MS

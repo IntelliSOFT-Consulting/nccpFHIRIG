@@ -15,7 +15,7 @@ Description: "Records a CTCAE-graded adverse event observation linked to a chemo
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * code from $VS_CTCAE_TERMS (required)
 * subject 1..1 MS
@@ -29,7 +29,7 @@ Description: "Records a CTCAE-graded adverse event observation linked to a chemo
 * value[x] only integer
 * valueInteger 1..1 MS
 * bodySite 0..1 MS
-* bodySite from $VS_CANCER_PRIMARY_SITE (extensible)
+* bodySite from $VS_CANCER_PRIMARY_SITE (required)
 * note 0..* MS
 * extension contains
     CTCAEAttributionExtension named ctcaeAttribution 1..1 MS and
@@ -51,7 +51,7 @@ Description: "Captures an oncology adverse event including CTCAE grade, attribut
 * category 1..* MS
 * category from AdverseEventCategoryVS (required)
 * event 1..1 MS
-* event from $VS_CTCAE_TERMS (extensible)
+* event from $VS_CTCAE_TERMS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS
@@ -65,7 +65,7 @@ Description: "Captures an oncology adverse event including CTCAE grade, attribut
 * recorder only Reference(Practitioner)
 * suspectEntity.instance 1..1 MS
 * suspectEntity.causality.assessment 0..1 MS
-* suspectEntity.causality.assessment from CTCAEAttributionVS (extensible)
+* suspectEntity.causality.assessment from CTCAEAttributionVS (required)
 * referenceDocument 0..* MS
 * extension contains
     CTCAEGradeExtension named ctcaeGrade 1..1 MS and

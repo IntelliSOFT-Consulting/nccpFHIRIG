@@ -16,16 +16,16 @@ Description: "Electronic prescription for a chemotherapy agent, including dose, 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/medicationrequest-status (required)
 * statusReason 0..1 MS
-* statusReason from MedicationRequestStatusReasonVS (extensible)
+* statusReason from MedicationRequestStatusReasonVS (required)
 * intent 1..1 MS
 * intent from http://hl7.org/fhir/ValueSet/medicationrequest-intent (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/medicationrequest-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/medicationrequest-category (required)
 * priority 0..1 MS
 * priority from http://hl7.org/fhir/ValueSet/request-priority (required)
 * medication[x] only CodeableConcept
 * medicationCodeableConcept 1..1 MS
-* medicationCodeableConcept from $VS_GENERIC_PRODUCTS (extensible)
+* medicationCodeableConcept from $VS_GENERIC_PRODUCTS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 0..1 MS
@@ -40,7 +40,7 @@ Description: "Electronic prescription for a chemotherapy agent, including dose, 
 * dosageInstruction.route 1..1 MS
 * dosageInstruction.route from RouteOfAdministrationVS (required)
 * dosageInstruction.method 0..1 MS
-* dosageInstruction.method from RouteOfAdministrationVS (extensible)
+* dosageInstruction.method from RouteOfAdministrationVS (required)
 * dosageInstruction.doseAndRate.doseQuantity 1..1 MS
 * dosageInstruction.timing.repeat.frequency 0..1 MS
 * dosageInstruction.timing.repeat.period 0..1 MS
@@ -74,12 +74,12 @@ Description: "Records the actual administration of a chemotherapy agent during a
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/medication-admin-status (required)
 * statusReason 0..* MS
-* statusReason from MedicationAdminStatusReasonVS (extensible)
+* statusReason from MedicationAdminStatusReasonVS (required)
 * category 1..1 MS
-* category from http://hl7.org/fhir/ValueSet/medication-admin-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/medication-admin-category (required)
 * medication[x] only CodeableConcept
 * medicationCodeableConcept 1..1 MS
-* medicationCodeableConcept from $VS_GENERIC_PRODUCTS (extensible)
+* medicationCodeableConcept from $VS_GENERIC_PRODUCTS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * context 1..1 MS

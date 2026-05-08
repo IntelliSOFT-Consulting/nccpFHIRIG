@@ -18,9 +18,9 @@ Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 
 * category 1..1 MS
 * category from ConditionCategoryVS (required)
 * severity 0..1 MS
-* severity from ConditionSeverityVS (extensible)
+* severity from ConditionSeverityVS (required)
 * code 1..1 MS
-* code from $VS_CONDITION_CODES (extensible)
+* code from $VS_CONDITION_CODES (required)
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -33,15 +33,15 @@ Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 
     diseaseExtent 0..1 MS and
     histopathology 0..1 MS and
     manifestation 0..1 MS
-* code.coding[specificAnatomy] from $VS_ICD11_ANATOMY (extensible)
-* code.coding[laterality] from $VS_LATERALITY_CODES (extensible)
-* code.coding[severityAxis] from $VS_ICD11_SEVERITY (extensible)
-* code.coding[grade] from $VS_CANCER_GRADE (extensible)
-* code.coding[diseaseExtent] from $VS_DISEASE_EXTENT_CODES (extensible)
-* code.coding[histopathology] from MorphologyCodesVS (extensible)
-* code.coding[manifestation] from $VS_MANIFESTATION_CODES (extensible)
+* code.coding[specificAnatomy] from $VS_ICD11_ANATOMY (required)
+* code.coding[laterality] from $VS_LATERALITY_CODES (required)
+* code.coding[severityAxis] from $VS_ICD11_SEVERITY (required)
+* code.coding[grade] from $VS_CANCER_GRADE (required)
+* code.coding[diseaseExtent] from $VS_DISEASE_EXTENT_CODES (required)
+* code.coding[histopathology] from MorphologyCodesVS (required)
+* code.coding[manifestation] from $VS_MANIFESTATION_CODES (required)
 * bodySite 0..* MS
-* bodySite from $VS_CANCER_PRIMARY_SITE (extensible)
+* bodySite from $VS_CANCER_PRIMARY_SITE (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS
@@ -53,13 +53,13 @@ Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 
 * asserter 0..1 MS
 * stage 0..1 MS
 * stage.summary 0..1 MS
-* stage.summary from CancerStageSummaryVS (extensible)
+* stage.summary from CancerStageSummaryVS (required)
 * stage.assessment 0..* MS
 * stage.type 0..1 MS
-* stage.type from CancerStageTypeVS (extensible)
+* stage.type from CancerStageTypeVS (required)
 * evidence 0..* MS
 * evidence.code 0..* MS
-* evidence.code from ManifestationOrSymptomVS (extensible)
+* evidence.code from ManifestationOrSymptomVS (required)
 * evidence.detail 0..* MS
 * note 0..* MS
 * extension contains
@@ -83,9 +83,9 @@ Description: "Records histopathological morphology findings for an oncology diag
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
-* code from http://hl7.org/fhir/ValueSet/observation-codes (extensible)
+* code from http://hl7.org/fhir/ValueSet/observation-codes (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..* MS
@@ -96,7 +96,7 @@ Description: "Records histopathological morphology findings for an oncology diag
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept from MorphologyCodesVS (required)
 * bodySite 0..1 MS
-* bodySite from $VS_CANCER_PRIMARY_SITE (extensible)
+* bodySite from $VS_CANCER_PRIMARY_SITE (required)
 * method 1..1 MS
 * method from MorphologyMethodVS (required)
 * specimen 0..1 MS

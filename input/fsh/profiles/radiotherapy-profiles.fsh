@@ -18,7 +18,7 @@ Description: "Prescription and referral for radiotherapy treatment, including in
 * intent from http://hl7.org/fhir/ValueSet/request-intent (required)
 * category 1..* MS
 * code 1..1 MS
-* code from $VS_SHA_INTERVENTIONS (extensible)
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 0..1 MS
@@ -69,7 +69,7 @@ Description: "Records a single radiotherapy fraction delivery event, including d
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * code 1..1 MS
-* code from $VS_SHA_INTERVENTIONS (extensible)
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS

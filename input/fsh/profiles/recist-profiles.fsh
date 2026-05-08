@@ -15,7 +15,7 @@ Description: "Records baseline tumour measurements at the start of therapy for R
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -43,7 +43,7 @@ Description: "Records measurement of a single RECIST target lesion at a specific
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -102,7 +102,7 @@ Description: "Records presence or absence of new lesions at a RECIST assessment 
 * value[x] only boolean
 * valueBoolean 1..1 MS
 * bodySite 0..1 MS
-* bodySite from $VS_CANCER_PRIMARY_SITE (extensible)
+* bodySite from $VS_CANCER_PRIMARY_SITE (required)
 
 // ---- PROFILE 31: RECISTResponseAssessmentObservation ----
 Profile: RECISTResponseAssessmentObservation

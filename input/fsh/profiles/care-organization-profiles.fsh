@@ -23,7 +23,7 @@ Description: "The multidisciplinary oncology care team responsible for the patie
 * period 1..1 MS
 * participant 1..* MS
 * participant.role 1..* MS
-* participant.role from $VS_PRACTITIONER_ROLES (extensible)
+* participant.role from $VS_PRACTITIONER_ROLES (required)
 * participant.member 1..1 MS
 * managingOrganization 1..1 MS
 * managingOrganization only Reference(Organization)
