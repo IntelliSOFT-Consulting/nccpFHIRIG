@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/codesystems /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/valuesets /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/extensions /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/profiles /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/examples && echo \"Directories created\")",
+      "Bash(sushi .)",
+      "Bash(xargs sed -i '' -e 's|\\\\$KNHTS/TREATMENT-INTENT/\\\\$expand|\\\\$VS_TREATMENT_INTENT|g' -e 's|\\\\$KNHTS/DIAGNOSIS-STATUS/\\\\$expand|\\\\$VS_DIAGNOSIS_STATUS|g' -e 's|\\\\$KNHTS/METASTASES-SITES/\\\\$expand|\\\\$VS_METASTASES_SITES|g' -e 's|\\\\$KNHTS/MEDICATION-CLINICAL-CATEGORY/\\\\$expand|\\\\$VS_MED_CLINICAL_CATEGORY|g' -e 's|\\\\$KNHTS/OCM-PROTOCOL-MARKERS/\\\\$expand|\\\\$VS_OCM_PROTOCOL_MARKERS|g' -e 's|\\\\$KNHTS/BMT-TYPE/\\\\$expand|\\\\$VS_BMT_TYPE|g' -e 's|\\\\$KNHTS/REFERRAL-SOURCE/\\\\$expand|\\\\$VS_REFERRAL_SOURCE|g' -e 's|\\\\$KNHTS/PRIOR-TREATMENT-OUTCOME/\\\\$expand|\\\\$VS_PRIOR_TREATMENT_OUTCOME|g' -e 's|\\\\$KNHTS/TREATMENT-SETTING/\\\\$expand|\\\\$VS_TREATMENT_SETTING|g' -e 's|\\\\$KNHTS/CTCAE-ACTION-TAKEN/\\\\$expand|\\\\$VS_CTCAE_ACTION_TAKEN|g' -e 's|\\\\$KNHTS/RECIST-TIMEPOINT/\\\\$expand|\\\\$VS_RECIST_TIMEPOINT|g' -e 's|\\\\$KNHTS/RT-INTENT/\\\\$expand|\\\\$VS_RT_INTENT|g' -e 's|\\\\$KNHTS/RT-TREATMENT-TECHNIQUE/\\\\$expand|\\\\$VS_RT_TREATMENT_TECHNIQUE|g' -e 's|\\\\$KNHTS/RT-TARGET-VOLUME/\\\\$expand|\\\\$VS_RT_TARGET_VOLUME|g' -e 's|\\\\$KNHTS/RT-BEAM-TYPE/\\\\$expand|\\\\$VS_RT_BEAM_TYPE|g' -e 's|\\\\$KNHTS/CTCAE-TERMS/\\\\$expand|\\\\$VS_CTCAE_TERMS|g' -e 's|\\\\$KNHTS/CANCER-PRIMARY-SITE/\\\\$expand|\\\\$VS_CANCER_PRIMARY_SITE|g' -e 's|\\\\$KNHTS/CANCER-GRADE/\\\\$expand|\\\\$VS_CANCER_GRADE|g' -e 's|\\\\$KNHTS/LATERALITY-CODES/\\\\$expand|\\\\$VS_LATERALITY_CODES|g' -e 's|\\\\$KNHTS/DISEASE-EXTENT-CODES/\\\\$expand|\\\\$VS_DISEASE_EXTENT_CODES|g' -e 's|\\\\$KNHTS/MANIFESTATION-CODES/\\\\$expand|\\\\$VS_MANIFESTATION_CODES|g' -e 's|\\\\$KNHTS/ICD-11-anatomy/\\\\$expand|\\\\$VS_ICD11_ANATOMY|g' -e 's|\\\\$KNHTS/ICD-11-severity/\\\\$expand|\\\\$VS_ICD11_SEVERITY|g' -e 's|\\\\$KNHTS/CTCAE-GRADE/\\\\$expand|\\\\$VS_CTCAE_GRADE|g' -e 's|\\\\$KNHTS/PRACTITIONER-ROLES/|\\\\$VS_PRACTITIONER_ROLES|g' -e 's|\\\\$KNHTS/CONDITION-CODES/|\\\\$VS_CONDITION_CODES|g' -e 's|\\\\$KNHTS/ENCOUNTER-STATUS/|\\\\$VS_ENCOUNTER_STATUS|g' -e 's|\\\\$KNHTS/MEDICATION-ADMINISTRATION-ROUTE/|\\\\$VS_MED_ADMIN_ROUTE|g' -e 's|\\\\$KNHTS/KenyaSocialHealthAuthorityInterventions/|\\\\$VS_SHA_INTERVENTIONS|g' -e 's|\\\\$Livia/treatment-course-codes/\\\\$expand|\\\\$VS_TREATMENT_COURSE_CODES|g' -e 's|\\\\$PPB/GenericProducts/|\\\\$VS_GENERIC_PRODUCTS|g' -e 's|\\\\$PPB/UoM/\\\\$expand|\\\\$VS_UOM|g')",
+      "Bash(sed -n '85,95p' /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/profiles/medication-profiles.fsh)",
+      "Bash(sed -n '75,90p' /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/profiles/radiotherapy-profiles.fsh)",
+      "Bash(java -jar input-cache/publisher.jar -ig ig.ini)",
+      "WebFetch(domain:igeprescriptions.intellisoftkenya.com)"
+    ],
+    "additionalDirectories": [
+      "/Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh"
+    ]
+  }
+}
