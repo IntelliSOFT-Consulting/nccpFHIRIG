@@ -15,7 +15,7 @@ Description: "Records TNM staging components (T, N, M) and overall stage for an 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -73,7 +73,7 @@ Description: "Records ECOG performance status at a given encounter to support tr
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -103,7 +103,7 @@ Description: "Records calculated body surface area used for BSA-based chemothera
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)

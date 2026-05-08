@@ -16,7 +16,7 @@ Description: "Documents prior surgical procedures relevant to the patient's canc
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * code 1..1 MS
-* code from $VS_SHA_INTERVENTIONS (extensible)
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * performed[x] only dateTime
@@ -39,13 +39,13 @@ Description: "Documents prior radiotherapy treatment relevant to the patient's c
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * code 1..1 MS
-* code from $VS_SHA_INTERVENTIONS (extensible)
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * performed[x] only Period
 * performedPeriod 1..1 MS
 * bodySite 0..1 MS
-* bodySite from $VS_CANCER_PRIMARY_SITE (extensible)
+* bodySite from $VS_CANCER_PRIMARY_SITE (required)
 * note 0..* MS
 
 // ---- PROFILE 19: PriorBMTProcedure ----
@@ -85,7 +85,7 @@ Description: "Documents prior systemic therapy (chemotherapy, immunotherapy, hor
 * category 1..1 MS
 * medication[x] only CodeableConcept
 * medicationCodeableConcept 1..1 MS
-* medicationCodeableConcept from $VS_GENERIC_PRODUCTS (extensible)
+* medicationCodeableConcept from $VS_GENERIC_PRODUCTS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * effective[x] only Period

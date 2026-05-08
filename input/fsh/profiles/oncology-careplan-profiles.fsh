@@ -38,12 +38,12 @@ Description: "Represents a structured oncology treatment care plan (chemotherapy
 * activity.detail.kind 0..1 MS
 * activity.detail.kind from http://hl7.org/fhir/ValueSet/care-plan-activity-kind (required)
 * activity.detail.code 0..1 MS
-* activity.detail.code from ProcedureCodeVS (extensible)
+* activity.detail.code from ProcedureCodeVS (required)
 * activity.detail.status 1..1 MS
 * activity.detail.status from http://hl7.org/fhir/ValueSet/care-plan-activity-status (required)
 * activity.detail.scheduledTiming 0..1 MS
 * activity.detail.reasonCode 0..* MS
-* activity.detail.reasonCode from ManifestationOrSymptomVS (extensible)
+* activity.detail.reasonCode from ManifestationOrSymptomVS (required)
 * activity.detail.reasonReference 0..* MS
 * extension contains
     TreatmentIntentExtension named treatmentIntent 1..1 MS and

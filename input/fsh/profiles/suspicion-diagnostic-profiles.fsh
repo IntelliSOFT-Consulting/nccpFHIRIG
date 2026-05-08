@@ -15,7 +15,7 @@ Description: "Records the clinical suspicion of cancer prior to confirmed diagno
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/observation-category (extensible)
+* category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -64,7 +64,7 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 * priority 1..1 MS
 * priority from DiagnosticTestUrgencyVS (required)
 * code 1..1 MS
-* code from $VS_SHA_INTERVENTIONS (extensible)
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS
@@ -75,7 +75,7 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 * reasonCode 1..* MS
 * reasonReference 0..* MS
 * bodySite 0..* MS
-* bodySite from $VS_CANCER_PRIMARY_SITE (extensible)
+* bodySite from $VS_CANCER_PRIMARY_SITE (required)
 * note 0..* MS
 * instantiatesCanonical 0..* MS
 * extension contains
@@ -94,9 +94,9 @@ Description: "Diagnostic report for oncology investigations including pathology 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/diagnostic-report-status (required)
 * category 1..* MS
-* category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (extensible)
+* category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (required)
 * code 1..1 MS
-* code from http://hl7.org/fhir/ValueSet/report-codes (extensible)
+* code from http://hl7.org/fhir/ValueSet/report-codes (required)
 * basedOn 1..* MS
 * basedOn only Reference(OncologyDiagnosticServiceRequest)
 * subject 1..1 MS
