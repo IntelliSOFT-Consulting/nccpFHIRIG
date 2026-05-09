@@ -20,7 +20,7 @@ Title: "Reason For Suspicion Extension"
 Description: "Reason for clinical cancer suspicion"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/reason-for-suspicion-extension"
 * value[x] only code
-* valueCode from ReasonForSuspicionVS (extensible)
+* valueCode from ReasonForSuspicionVS (required)
 
 Extension: PostCoordinatedCodeExtension
 Id: post-coordinated-code-extension
@@ -35,4 +35,4 @@ Title: "Metastases Sites Extension"
 Description: "Sites of metastatic disease"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/metastases-sites-extension"
 * value[x] only code
-* valueCode from $VS_METASTASES_SITES (extensible)
+* valueCode from $VS_METASTASES_SITES (required)

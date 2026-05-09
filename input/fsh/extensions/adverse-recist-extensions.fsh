@@ -26,7 +26,7 @@ Title: "CTCAE Action Taken Extension"
 Description: "Action taken in response to the adverse event"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/ctcae-action-taken-extension"
 * value[x] only code
-* valueCode from $VS_CTCAE_ACTION_TAKEN (extensible)
+* valueCode from $VS_CTCAE_ACTION_TAKEN (required)
 
 Extension: RECISTTimepointExtension
 Id: recist-timepoint-extension

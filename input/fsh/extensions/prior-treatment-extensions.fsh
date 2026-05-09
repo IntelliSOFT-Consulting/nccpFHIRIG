@@ -24,4 +24,4 @@ Title: "Prior Treatment Outcome Extension"
 Description: "Outcome of prior treatment before referral"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/treatment-started-at-notification-extension"
 * value[x] only code
-* valueCode from $VS_PRIOR_TREATMENT_OUTCOME (extensible)
+* valueCode from $VS_PRIOR_TREATMENT_OUTCOME (required)

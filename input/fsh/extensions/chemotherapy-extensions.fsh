@@ -33,7 +33,7 @@ Title: "Regimen Code Extension"
 Description: "Code identifying the treatment regimen from Livia"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/regimen-code-extension"
 * value[x] only Coding
-* valueCoding from $VS_TREATMENT_COURSE_CODES (extensible)
+* valueCoding from $VS_TREATMENT_COURSE_CODES (required)
 
 Extension: CycleNumberExtension
 Id: cycle-number-extension
@@ -106,4 +106,4 @@ Title: "Protocol Markers Extension"
 Description: "OCM protocol markers for diagnostic ordering"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/protocol-markers-extension"
 * value[x] only Coding
-* valueCoding from $VS_OCM_PROTOCOL_MARKERS (extensible)
+* valueCoding from $VS_OCM_PROTOCOL_MARKERS (required)

@@ -17,6 +17,7 @@ Description: "Records the clinical suspicion of cancer prior to confirmed diagno
 * category 1..* MS
 * category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS
@@ -61,6 +62,7 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 * intent 1..1 MS
 * intent from http://hl7.org/fhir/ValueSet/request-intent (required)
 * category 1..* MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * priority 1..1 MS
 * priority from DiagnosticTestUrgencyVS (required)
 * code 1..1 MS
@@ -73,6 +75,7 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 * requester 1..1 MS
 * requester only Reference(Practitioner)
 * reasonCode 1..* MS
+* reasonCode from ConditionCodesVS (required)
 * reasonReference 0..* MS
 * bodySite 0..* MS
 * bodySite from $VS_CANCER_PRIMARY_SITE (required)

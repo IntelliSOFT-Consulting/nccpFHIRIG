@@ -17,6 +17,7 @@ Description: "Prescription and referral for radiotherapy treatment, including in
 * intent 1..1 MS
 * intent from http://hl7.org/fhir/ValueSet/request-intent (required)
 * category 1..* MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
 * code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
@@ -49,6 +50,7 @@ Description: "Template radiotherapy protocol defining total fractions, dose per 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/publication-status (required)
 * type 1..1 MS
+* type from PlanDefinitionTypeVS (required)
 * extension contains
     RTTotalFractionsExtension named rtTotalFractions 1..1 MS and
     RTDosePerFractionExtension named rtDosePerFraction 1..1 MS and
@@ -68,6 +70,7 @@ Description: "Records a single radiotherapy fraction delivery event, including d
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
 * code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
@@ -103,6 +106,7 @@ Description: "Summarises cumulative dose, dose per fraction and total fractions 
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..1 MS
