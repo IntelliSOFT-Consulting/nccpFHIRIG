@@ -17,13 +17,16 @@ Description: "Records referral of a patient to an oncology specialist or cancer 
 * intent 1..1 MS
 * intent from http://hl7.org/fhir/ValueSet/request-intent (required)
 * category 1..1 MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * requester 0..1 MS
 * performer 0..* MS
 * performer only Reference(Organization)
 * reasonCode 1..* MS
+* reasonCode from ConditionCodesVS (required)
 * note 0..* MS
 * extension contains
     ReferralSourceExtension named referralSource 1..1 MS and
@@ -52,6 +55,7 @@ Description: "Request to verify patient insurance coverage eligibility for oncol
 * insurance.coverage 1..1 MS
 * insurance.coverage only Reference(Coverage)
 * item.productOrService 0..1 MS
+* item.productOrService from $VS_SHA_INTERVENTIONS (required)
 * extension contains
     RegimenReferenceExtension named regimenReference 0..1 MS
 
@@ -70,6 +74,7 @@ Description: "Insurance claim for oncology treatment submitted to SHA, including
 * type 1..1 MS
 * type from http://hl7.org/fhir/ValueSet/claim-type (required)
 * subType 0..1 MS
+* subType from $VS_SHA_INTERVENTIONS (required)
 * use 1..1 MS
 * use from http://hl7.org/fhir/ValueSet/claim-use (required)
 * patient 1..1 MS
@@ -81,9 +86,11 @@ Description: "Insurance claim for oncology treatment submitted to SHA, including
 * diagnosis.diagnosisReference 0..1 MS
 * diagnosis.diagnosisReference only Reference(OncologyDiagnosisCondition)
 * item.productOrService 1..1 MS
+* item.productOrService from $VS_SHA_INTERVENTIONS (required)
 * item.unitPrice 1..1 MS
 * item.quantity 1..1 MS
 * item.detail.productOrService 1..1 MS
+* item.detail.productOrService from $VS_SHA_INTERVENTIONS (required)
 * item.detail.unitPrice 0..1 MS
 * item.detail.quantity 0..1 MS
 * supportingInfo.value[x] MS

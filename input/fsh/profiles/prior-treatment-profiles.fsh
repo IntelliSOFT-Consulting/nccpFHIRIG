@@ -15,6 +15,7 @@ Description: "Documents prior surgical procedures relevant to the patient's canc
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
 * code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
@@ -38,6 +39,7 @@ Description: "Documents prior radiotherapy treatment relevant to the patient's c
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
 * code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
@@ -61,7 +63,9 @@ Description: "Documents prior bone marrow transplant relevant to the patient's h
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
+* category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * performed[x] only dateTime
@@ -83,6 +87,7 @@ Description: "Documents prior systemic therapy (chemotherapy, immunotherapy, hor
 * status 1..1 MS
 * status from http://hl7.org/fhir/ValueSet/medication-statement-status (required)
 * category 1..1 MS
+* category from MedClinicalCategoryVS (required)
 * medication[x] only CodeableConcept
 * medicationCodeableConcept 1..1 MS
 * medicationCodeableConcept from $VS_GENERIC_PRODUCTS (required)

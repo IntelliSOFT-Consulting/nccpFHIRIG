@@ -7,7 +7,14 @@
       "Bash(sed -n '85,95p' /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/profiles/medication-profiles.fsh)",
       "Bash(sed -n '75,90p' /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/profiles/radiotherapy-profiles.fsh)",
       "Bash(java -jar input-cache/publisher.jar -ig ig.ini)",
-      "WebFetch(domain:igeprescriptions.intellisoftkenya.com)"
+      "WebFetch(domain:igeprescriptions.intellisoftkenya.com)",
+      "Bash(grep -rn \" from http\\\\| from \\\\$\" /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/)",
+      "Bash(grep -rn '$VS_\\\\|$loinc\\\\|$snomed' /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/profiles/ /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/extensions/)",
+      "Bash(grep -o '\\\\$VS_[A-Z0-9_]*\\\\|\\\\$loinc\\\\|\\\\$snomed')",
+      "Bash(grep -oE '\\\\$VS_[A-Z0-9_]+')",
+      "Bash(grep -rn '$snomed' /Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh/)",
+      "Bash(grep -v \"^$\")",
+      "WebSearch"
     ],
     "additionalDirectories": [
       "/Users/daviemukungi/SoftwareDev/FHIR/nccpIG/input/fsh"

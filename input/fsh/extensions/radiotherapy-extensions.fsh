@@ -34,7 +34,7 @@ Title: "Radiotherapy Target Volume Extension"
 Description: "Target volume definition for radiotherapy"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/rt-target-volume-extension"
 * value[x] only code
-* valueCode from $VS_RT_TARGET_VOLUME (extensible)
+* valueCode from $VS_RT_TARGET_VOLUME (required)
 
 Extension: RTBeamTypeExtension
 Id: rt-beam-type-extension

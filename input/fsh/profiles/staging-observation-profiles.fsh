@@ -17,6 +17,7 @@ Description: "Records TNM staging components (T, N, M) and overall stage for an 
 * category 1..* MS
 * category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..1 MS
@@ -38,24 +39,33 @@ Description: "Records TNM staging components (T, N, M) and overall stage for an 
     overallStage 1..1 MS and
     grade 0..1 MS and
     laterality 0..1 MS
-* component[clinicalT].code MS
+* component[clinicalT].code 1..1 MS
+* component[clinicalT].code from CancerStageTypeVS (required)
 * component[clinicalT].value[x] only CodeableConcept
 * component[clinicalT].valueCodeableConcept 1..1 MS
 * component[clinicalT].valueCodeableConcept from ClinicalTVS (required)
-* component[clinicalN].code MS
+* component[clinicalN].code 1..1 MS
+* component[clinicalN].code from CancerStageTypeVS (required)
 * component[clinicalN].value[x] only CodeableConcept
 * component[clinicalN].valueCodeableConcept 1..1 MS
 * component[clinicalN].valueCodeableConcept from ClinicalNVS (required)
-* component[clinicalM].code MS
+* component[clinicalM].code 1..1 MS
+* component[clinicalM].code from CancerStageTypeVS (required)
 * component[clinicalM].value[x] only CodeableConcept
 * component[clinicalM].valueCodeableConcept 1..1 MS
 * component[clinicalM].valueCodeableConcept from ClinicalMVS (required)
+* component[overallStage].code 1..1 MS
+* component[overallStage].code from CancerStageTypeVS (required)
 * component[overallStage].value[x] only CodeableConcept
 * component[overallStage].valueCodeableConcept 1..1 MS
 * component[overallStage].valueCodeableConcept from CancerStageSummaryVS (required)
+* component[grade].code 1..1 MS
+* component[grade].code from CancerStageTypeVS (required)
 * component[grade].value[x] only CodeableConcept
 * component[grade].valueCodeableConcept 1..1 MS
 * component[grade].valueCodeableConcept from $VS_CANCER_GRADE (required)
+* component[laterality].code 1..1 MS
+* component[laterality].code from CancerStageTypeVS (required)
 * component[laterality].value[x] only CodeableConcept
 * component[laterality].valueCodeableConcept 1..1 MS
 * component[laterality].valueCodeableConcept from $VS_LATERALITY_CODES (required)
@@ -75,6 +85,7 @@ Description: "Records ECOG performance status at a given encounter to support tr
 * category 1..* MS
 * category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 0..* MS
@@ -105,6 +116,7 @@ Description: "Records calculated body surface area used for BSA-based chemothera
 * category 1..* MS
 * category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * encounter 1..1 MS

@@ -32,4 +32,4 @@ Title: "Treatment Setting Extension"
 Description: "Clinical setting where treatment is administered"
 * ^url = "https://fhir.dha.go.ke/core/StructureDefinition/treatment-setting-extension"
 * value[x] only code
-* valueCode from $VS_TREATMENT_SETTING (extensible)
+* valueCode from $VS_TREATMENT_SETTING (required)
