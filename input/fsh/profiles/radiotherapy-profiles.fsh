@@ -5,10 +5,10 @@
 // ---- PROFILE 32: RadiotherapyServiceRequest ----
 Profile: RadiotherapyServiceRequest
 Parent: ServiceRequest
-Id: nccp-radiotherapy-service-request
+Id: ke-nccp-radiotherapy-service-request
 Title: "NCCP Radiotherapy Service Request"
 Description: "Prescription and referral for radiotherapy treatment, including intent, technique and target volume."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-radiotherapy-service-request"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-service-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -38,10 +38,10 @@ Description: "Prescription and referral for radiotherapy treatment, including in
 // ---- PROFILE 33: RadiotherapyPlanDefinition ----
 Profile: RadiotherapyPlanDefinition
 Parent: PlanDefinition
-Id: nccp-radiotherapy-plan-definition
+Id: ke-nccp-radiotherapy-plan-definition
 Title: "NCCP Radiotherapy Plan Definition"
 Description: "Template radiotherapy protocol defining total fractions, dose per fraction and technique."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-radiotherapy-plan-definition"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-plan-definition"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -59,10 +59,10 @@ Description: "Template radiotherapy protocol defining total fractions, dose per 
 // ---- PROFILE 35: RadiotherapyTreatmentProcedure ----
 Profile: RadiotherapyTreatmentProcedure
 Parent: Procedure
-Id: nccp-radiotherapy-treatment-procedure
+Id: ke-nccp-radiotherapy-treatment-procedure
 Title: "NCCP Radiotherapy Treatment Procedure"
 Description: "Records a single radiotherapy fraction delivery event, including dose, beam type and machine."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-radiotherapy-treatment-procedure"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-treatment-procedure"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -96,10 +96,10 @@ Description: "Records a single radiotherapy fraction delivery event, including d
 // ---- PROFILE 36: RadiotherapyDoseObservation ----
 Profile: RadiotherapyDoseObservation
 Parent: Observation
-Id: nccp-radiotherapy-dose-observation
+Id: ke-nccp-radiotherapy-dose-observation
 Title: "NCCP Radiotherapy Dose Observation"
 Description: "Summarises cumulative dose, dose per fraction and total fractions for a radiotherapy course."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-radiotherapy-dose-observation"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-dose-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS

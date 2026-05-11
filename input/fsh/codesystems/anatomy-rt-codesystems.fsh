@@ -8,7 +8,7 @@ CodeSystem: ICD11AnatomyCS
 Id: icd11-anatomy-cs
 Title: "Kenya ICD-11 Anatomy Code System"
 Description: "Anatomical body site codes used in oncology diagnosis and staging, aligned with ICD-11 topology."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/icd11-anatomy-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/icd11-anatomy-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #HEAD-NECK         "Head and Neck"
@@ -61,7 +61,7 @@ CodeSystem: ICD11SeverityCS
 Id: icd11-severity-cs
 Title: "Kenya ICD-11 Disease Severity Code System"
 Description: "Severity classification codes aligned with ICD-11 severity axes."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/icd11-severity-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/icd11-severity-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #MILD              "Mild"              "Disease severity is mild; minimal functional impact."
@@ -76,7 +76,7 @@ CodeSystem: RTIntentCS
 Id: rt-intent-cs
 Title: "Kenya Radiotherapy Intent Code System"
 Description: "Codes for the clinical intent of a radiotherapy treatment course."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/rt-intent-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/rt-intent-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #CURATIVE          "Curative"           "Radical RT aimed at cure or complete local control."
@@ -95,7 +95,7 @@ CodeSystem: RTTreatmentTechniqueCS
 Id: rt-treatment-technique-cs
 Title: "Kenya Radiotherapy Treatment Technique Code System"
 Description: "Codes for the technical approach used in delivering radiotherapy."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/rt-treatment-technique-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/rt-treatment-technique-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #TWO-D-RT          "2D Conventional RT"          "Two-field or opposed fields using 2D planning."
@@ -119,7 +119,7 @@ CodeSystem: RTTargetVolumeCS
 Id: rt-target-volume-cs
 Title: "Kenya Radiotherapy Target Volume Code System"
 Description: "ICRU-defined target volume concepts used in radiotherapy planning."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/rt-target-volume-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/rt-target-volume-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #GTV    "GTV — Gross Tumour Volume"      "Macroscopic extent of tumour visible on imaging."
@@ -137,7 +137,7 @@ CodeSystem: RTBeamTypeCS
 Id: rt-beam-type-cs
 Title: "Kenya Radiotherapy Beam Type Code System"
 Description: "Codes for the radiation beam or source type used in treatment delivery."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/rt-beam-type-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/rt-beam-type-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #PHOTON-X-RAY          "Photon — X-ray (Linac)"       "High-energy X-ray photons from a linear accelerator."

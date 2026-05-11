@@ -2,7 +2,7 @@ CodeSystem: MedicationRequestStatusReasonCS
 Id: medicationrequest-status-reason-cs
 Title: "Kenya MedicationRequest Status Reason Code System"
 Description: "MedicationRequest status reason codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/medicationrequest-status-reason-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/medicationrequest-status-reason-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #ALLERGY "Allergy"
@@ -29,7 +29,7 @@ CodeSystem: RouteOfAdministrationCS
 Id: route-of-administration-cs
 Title: "Kenya PPB Route of Administration Code System"
 Description: "Route of administration codes from MOH-PPB KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/route-of-administration-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/route-of-administration-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #RT10001 "Buccal"
@@ -76,7 +76,7 @@ CodeSystem: MedicationAdminStatusReasonCS
 Id: medication-admin-status-reason-cs
 Title: "Kenya Medication Administration Status Reason Code System"
 Description: "Medication administration status reason codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/medication-admin-status-reason-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/medication-admin-status-reason-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #PATIENT-REFUSED-MEDICATION "Patient refused medication"

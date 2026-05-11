@@ -5,10 +5,10 @@
 // ---- PROFILE 11: TNMStagingObservation ----
 Profile: TNMStagingObservation
 Parent: Observation
-Id: nccp-tnm-staging-observation
+Id: ke-nccp-tnm-staging-observation
 Title: "NCCP TNM Staging Observation"
 Description: "Records TNM staging components (T, N, M) and overall stage for an oncology diagnosis."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-tnm-staging-observation"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-tnm-staging-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -73,10 +73,10 @@ Description: "Records TNM staging components (T, N, M) and overall stage for an 
 // ---- PROFILE 12: PerformanceStatusObservation ----
 Profile: PerformanceStatusObservation
 Parent: Observation
-Id: nccp-performance-status-observation
+Id: ke-nccp-performance-status-observation
 Title: "NCCP ECOG Performance Status Observation"
 Description: "Records ECOG performance status at a given encounter to support treatment decisions."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-performance-status-observation"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-performance-status-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -104,10 +104,10 @@ Description: "Records ECOG performance status at a given encounter to support tr
 // ---- PROFILE 13: BodySurfaceAreaObservation ----
 Profile: BodySurfaceAreaObservation
 Parent: Observation
-Id: nccp-body-surface-area-observation
+Id: ke-nccp-body-surface-area-observation
 Title: "NCCP Body Surface Area Observation"
 Description: "Records calculated body surface area used for BSA-based chemotherapy dosing."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-body-surface-area-observation"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-body-surface-area-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS

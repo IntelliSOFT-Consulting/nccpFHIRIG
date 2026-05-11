@@ -5,10 +5,10 @@
 // ---- PROFILE 14: CancerSuspicionObservation ----
 Profile: CancerSuspicionObservation
 Parent: Observation
-Id: nccp-cancer-suspicion-observation
+Id: ke-nccp-cancer-suspicion-observation
 Title: "NCCP Cancer Suspicion Observation"
 Description: "Records the clinical suspicion of cancer prior to confirmed diagnosis, capturing suspicion level and reasons."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-cancer-suspicion-observation"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-cancer-suspicion-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -49,10 +49,10 @@ Description: "Records the clinical suspicion of cancer prior to confirmed diagno
 // ---- PROFILE 15: OncologyDiagnosticServiceRequest ----
 Profile: OncologyDiagnosticServiceRequest
 Parent: ServiceRequest
-Id: nccp-oncology-diagnostic-service-request
+Id: ke-nccp-oncology-diagnostic-service-request
 Title: "NCCP Oncology Diagnostic Service Request"
 Description: "Electronic request for diagnostic investigations (lab, imaging, pathology) in the oncology workflow."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-diagnostic-service-request"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnostic-service-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -87,10 +87,10 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 // ---- PROFILE 16: OncologyDiagnosticReport ----
 Profile: OncologyDiagnosticReport
 Parent: DiagnosticReport
-Id: nccp-oncology-diagnostic-report
+Id: ke-nccp-oncology-diagnostic-report
 Title: "NCCP Oncology Diagnostic Report"
 Description: "Diagnostic report for oncology investigations including pathology and radiology."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-diagnostic-report"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnostic-report"
 * ^status = #draft
 
 * meta.profile 1..* MS

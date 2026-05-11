@@ -2,7 +2,7 @@ CodeSystem: CancerSuspicionLevelCS
 Id: cancer-suspicion-level-cs
 Title: "Kenya Cancer Suspicion Level Code System"
 Description: "Cancer suspicion level codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/cancer-suspicion-level-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/cancer-suspicion-level-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #SUSPICION-LOW "Suspicion Low"
@@ -13,7 +13,7 @@ CodeSystem: ReasonForSuspicionCS
 Id: reason-for-suspicion-cs
 Title: "Kenya Reason For Suspicion Code System"
 Description: "Reason for cancer suspicion codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/reason-for-suspicion-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/reason-for-suspicion-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #ABNORMAL-SCREENING "Abnormal Screening"
@@ -28,7 +28,7 @@ CodeSystem: DiagnosticTestUrgencyCS
 Id: diagnostic-test-urgency-cs
 Title: "Kenya Diagnostic Test Urgency Code System"
 Description: "Diagnostic test urgency codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/diagnostic-test-urgency-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/diagnostic-test-urgency-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #STAT "Stat"

@@ -7,7 +7,7 @@ InstanceOf: OncologyCareplan
 Title: "Example NCCP Oncology Care Plan (AC-T Chemotherapy)"
 Description: "Example AC-T 21-day chemotherapy care plan for a breast cancer patient"
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-careplan"
+* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-careplan"
 * identifier[0].system = "http://livia.intellisoftkenya.com/regimen-id"
 * identifier[0].value = "REG-2026-00123"
 * status = #active
@@ -32,7 +32,7 @@ InstanceOf: OncologyDiagnosisCondition
 Title: "Example NCCP Oncology Diagnosis — Invasive Ductal Carcinoma"
 Description: "Example diagnosis of breast cancer using ICD-11 coding"
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-diagnosis-condition"
+* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnosis-condition"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved "Resolved"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * category[0] = ConditionCategoryCS#ENCOUNTER-DIAGNOSIS "Encounter Diagnosis"
@@ -53,7 +53,7 @@ InstanceOf: TNMStagingObservation
 Title: "Example TNM Staging Observation — Breast Cancer Stage IIB"
 Description: "TNM staging observation T2 N1 M0 for a breast cancer patient"
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-tnm-staging-observation"
+* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-tnm-staging-observation"
 * status = #final
 * code.coding[0].system = "http://loinc.org"
 * code.coding[0].code = #21908-9
@@ -82,7 +82,7 @@ InstanceOf: RECISTResponseAssessmentObservation
 Title: "Example RECIST Overall Response Assessment — Partial Response"
 Description: "RECIST response assessment after 2 cycles of chemotherapy"
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-recist-response-assessment-observation"
+* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-response-assessment-observation"
 * status = #final
 * code.coding[0].system = "http://loinc.org"
 * code.coding[0].code = #21976-6

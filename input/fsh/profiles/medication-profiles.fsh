@@ -5,10 +5,10 @@
 // ---- PROFILE 9: ChemotherapyMedicationRequest ----
 Profile: ChemotherapyMedicationRequest
 Parent: MedicationRequest
-Id: nccp-chemotherapy-medication-request
+Id: ke-nccp-chemotherapy-medication-request
 Title: "NCCP Chemotherapy Medication Request"
 Description: "Electronic prescription for a chemotherapy agent, including dose, route, cycle timing and BSA-based dosing details."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-chemotherapy-medication-request"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-chemotherapy-medication-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -63,10 +63,10 @@ Description: "Electronic prescription for a chemotherapy agent, including dose, 
 // ---- PROFILE 10: OncologyMedicationAdministration ----
 Profile: OncologyMedicationAdministration
 Parent: MedicationAdministration
-Id: nccp-oncology-medication-administration
+Id: ke-nccp-oncology-medication-administration
 Title: "NCCP Oncology Medication Administration"
 Description: "Records the actual administration of a chemotherapy agent during a treatment session."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-medication-administration"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-medication-administration"
 * ^status = #draft
 
 * meta.profile 1..* MS

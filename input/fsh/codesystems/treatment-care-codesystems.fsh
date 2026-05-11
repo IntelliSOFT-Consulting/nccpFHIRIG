@@ -9,7 +9,7 @@ CodeSystem: TreatmentIntentCS
 Id: treatment-intent-cs
 Title: "Kenya Treatment Intent Code System"
 Description: "Codes representing the clinical intent of an oncology treatment."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/treatment-intent-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/treatment-intent-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #CURATIVE        "Curative"           "Treatment aimed at cure or long-term remission."
@@ -26,7 +26,7 @@ CodeSystem: TreatmentSettingCS
 Id: treatment-setting-cs
 Title: "Kenya Treatment Setting Code System"
 Description: "Codes indicating the care setting in which oncology treatment is delivered."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/treatment-setting-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/treatment-setting-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #INPATIENT       "Inpatient"          "Patient is admitted overnight for treatment."
@@ -42,7 +42,7 @@ CodeSystem: MedClinicalCategoryCS
 Id: med-clinical-category-cs
 Title: "Kenya Medication Clinical Category Code System"
 Description: "Codes classifying the clinical role of a medication within an oncology regimen."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/med-clinical-category-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/med-clinical-category-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #CHEMOTHERAPY       "Chemotherapy"        "Cytotoxic agent used to kill or inhibit cancer cells."
@@ -62,7 +62,7 @@ CodeSystem: TreatmentCourseCodesCS
 Id: treatment-course-codes-cs
 Title: "Kenya Treatment Course (Regimen) Code System"
 Description: "Standard oncology chemotherapy regimen codes used in Kenya."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/treatment-course-codes-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/treatment-course-codes-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #AC                  "AC"                   "Doxorubicin + Cyclophosphamide"
@@ -95,7 +95,7 @@ CodeSystem: OCMProtocolMarkersCS
 Id: ocm-protocol-markers-cs
 Title: "Kenya OCM Protocol Markers Code System"
 Description: "Biomarker and molecular marker codes used for treatment protocol selection."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/ocm-protocol-markers-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ocm-protocol-markers-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #HER2-POSITIVE    "HER2 Positive"       "HER2/neu overexpression or amplification detected."
@@ -122,7 +122,7 @@ CodeSystem: BMTTypeCS
 Id: bmt-type-cs
 Title: "Kenya Bone Marrow / Stem Cell Transplant Type Code System"
 Description: "Codes for the type of bone marrow or haematopoietic stem cell transplant."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/bmt-type-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/bmt-type-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #AUTOLOGOUS                "Autologous"                    "Stem cells from the patient themselves."
@@ -138,7 +138,7 @@ CodeSystem: ReferralSourceCS
 Id: referral-source-cs
 Title: "Kenya Referral Source Code System"
 Description: "Codes indicating the source or origin of an oncology referral."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/referral-source-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/referral-source-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #SELF                        "Self-Referral"               "Patient presented without a formal referral."
@@ -157,7 +157,7 @@ CodeSystem: PriorTreatmentOutcomeCS
 Id: prior-treatment-outcome-cs
 Title: "Kenya Prior Treatment Outcome Code System"
 Description: "Codes representing the outcome of a prior oncology treatment course."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/prior-treatment-outcome-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/prior-treatment-outcome-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #COMPLETE-RESPONSE   "Complete Response"      "No evidence of disease following treatment."

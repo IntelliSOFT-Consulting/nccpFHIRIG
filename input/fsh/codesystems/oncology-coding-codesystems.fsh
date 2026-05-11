@@ -9,7 +9,7 @@ CodeSystem: CancerPrimarySiteCS
 Id: cancer-primary-site-cs
 Title: "Kenya Cancer Primary Site Code System"
 Description: "Codes for the anatomical primary site of a malignancy, aligned with ICD-10 topography."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/cancer-primary-site-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/cancer-primary-site-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #BREAST               "Breast"                         "C50 — Malignant neoplasm of breast."
@@ -54,7 +54,7 @@ CodeSystem: CancerGradeCS
 Id: cancer-grade-cs
 Title: "Kenya Cancer Grade Code System"
 Description: "Histological tumour grade codes based on degree of differentiation."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/cancer-grade-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/cancer-grade-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #GX     "GX — Grade Cannot Be Assessed"   "Histological grade cannot be assessed."
@@ -72,7 +72,7 @@ CodeSystem: LateralityCodesCS
 Id: laterality-codes-cs
 Title: "Kenya Laterality Code System"
 Description: "Codes indicating the side of the body affected by the malignancy or treatment."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/laterality-codes-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/laterality-codes-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #LEFT                    "Left"                     "Lesion / tumour is on the left side."
@@ -88,7 +88,7 @@ CodeSystem: DiseaseExtentCodesCS
 Id: disease-extent-codes-cs
 Title: "Kenya Disease Extent Code System"
 Description: "Codes describing the extent of disease spread at the time of assessment."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/disease-extent-codes-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/disease-extent-codes-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #IN-SITU             "In Situ"                 "Carcinoma in situ; no invasion of basement membrane."
@@ -105,7 +105,7 @@ CodeSystem: MetastasesSitesCS
 Id: metastases-sites-cs
 Title: "Kenya Metastases Sites Code System"
 Description: "Codes for sites of distant metastatic spread."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/metastases-sites-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/metastases-sites-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #BRAIN               "Brain"                    "Cerebral metastases."
@@ -129,7 +129,7 @@ CodeSystem: ManifestationCodesCS
 Id: manifestation-codes-cs
 Title: "Kenya Cancer Manifestation Codes Code System"
 Description: "Codes for presenting symptoms, signs, and clinical manifestations of cancer."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/manifestation-codes-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/manifestation-codes-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #WEIGHT-LOSS          "Unexplained Weight Loss"
@@ -162,7 +162,7 @@ CodeSystem: ConditionCodesCS
 Id: condition-codes-cs
 Title: "Kenya Oncology Condition (ICD-10) Code System"
 Description: "ICD-10 diagnosis codes for the most common malignancies in Kenya."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/condition-codes-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/condition-codes-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #C50   "C50 — Malignant neoplasm of breast"
@@ -205,7 +205,7 @@ CodeSystem: EncounterStatusCS
 Id: encounter-status-cs
 Title: "Kenya Oncology Encounter Status Code System"
 Description: "Status codes for oncology encounters, aligned with FHIR R4 encounter-status."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/encounter-status-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/encounter-status-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #planned        "Planned"        "Encounter has not yet started."

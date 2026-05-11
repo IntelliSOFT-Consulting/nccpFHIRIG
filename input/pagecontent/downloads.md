@@ -19,7 +19,7 @@ example instances as FHIR R4 JSON resources, suitable for loading into any FHIR 
   <strong>Package ID:</strong> <code>fhir.ke.nccp</code><br/>
   <strong>Version:</strong> <code>0.1.0</code><br/>
   <strong>FHIR Version:</strong> <code>4.0.1</code><br/>
-  <strong>Canonical:</strong> <code>https://fhir.dha.go.ke/core</code>
+  <strong>Canonical:</strong> <code>https://fhir.dha.go.ke/nccp</code>
 </div>
 
 ---

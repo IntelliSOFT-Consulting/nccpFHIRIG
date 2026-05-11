@@ -4,7 +4,7 @@
 # ╰──────────────────────────────────────────────────────────────────────────────────────────╯
 
 id: fhir.ke.nccp
-canonical: https://fhir.dha.go.ke/core
+canonical: https://fhir.dha.go.ke/nccp
 name: KenyaNCCPIG
 title: "Kenya National Cancer Control Programme (NCCP) FHIR Implementation Guide"
 description: >-
