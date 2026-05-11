@@ -5,10 +5,10 @@
 // ---- PROFILE 21: OncologyReferralServiceRequest ----
 Profile: OncologyReferralServiceRequest
 Parent: ServiceRequest
-Id: nccp-oncology-referral-service-request
+Id: ke-nccp-oncology-referral-service-request
 Title: "NCCP Oncology Referral Service Request"
 Description: "Records referral of a patient to an oncology specialist or cancer centre."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-referral-service-request"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-referral-service-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -35,10 +35,10 @@ Description: "Records referral of a patient to an oncology specialist or cancer 
 // ---- PROFILE 22: OncologyCoverageEligibilityRequest ----
 Profile: OncologyCoverageEligibilityRequest
 Parent: CoverageEligibilityRequest
-Id: nccp-oncology-coverage-eligibility-request
+Id: ke-nccp-oncology-coverage-eligibility-request
 Title: "NCCP Oncology Coverage Eligibility Request"
 Description: "Request to verify patient insurance coverage eligibility for oncology treatment."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-coverage-eligibility-request"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-coverage-eligibility-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -62,10 +62,10 @@ Description: "Request to verify patient insurance coverage eligibility for oncol
 // ---- PROFILE 23: OncologyClaim ----
 Profile: OncologyClaim
 Parent: Claim
-Id: nccp-oncology-claim
+Id: ke-nccp-oncology-claim
 Title: "NCCP Oncology Claim"
 Description: "Insurance claim for oncology treatment submitted to SHA, including staging, treatment setting and session details."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-claim"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-claim"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -112,10 +112,10 @@ Description: "Insurance claim for oncology treatment submitted to SHA, including
 // ---- PROFILE 24: OncologyClaimResponse ----
 Profile: OncologyClaimResponse
 Parent: ClaimResponse
-Id: nccp-oncology-claim-response
+Id: ke-nccp-oncology-claim-response
 Title: "NCCP Oncology Claim Response"
 Description: "Response from SHA to an oncology prior authorization or claim, including sessions covered and cycle boundaries."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-claim-response"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-claim-response"
 * ^status = #draft
 
 * meta.profile 1..* MS

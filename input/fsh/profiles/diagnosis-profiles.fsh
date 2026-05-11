@@ -5,10 +5,10 @@
 // ---- PROFILE 2: OncologyDiagnosisCondition ----
 Profile: OncologyDiagnosisCondition
 Parent: Condition
-Id: nccp-oncology-diagnosis-condition
+Id: ke-nccp-oncology-diagnosis-condition
 Title: "NCCP Oncology Diagnosis Condition"
 Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 post-coordinated coding for the NCCP."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-oncology-diagnosis-condition"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnosis-condition"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -72,10 +72,10 @@ Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 
 // ---- PROFILE 3: MorphologyObservation ----
 Profile: MorphologyObservation
 Parent: Observation
-Id: nccp-morphology-observation
+Id: ke-nccp-morphology-observation
 Title: "NCCP Morphology Observation"
 Description: "Records histopathological morphology findings for an oncology diagnosis, including tissue type and biopsy method."
-* ^url = "https://fhir.dha.go.ke/core/StructureDefinition/nccp-morphology-observation"
+* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-morphology-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS

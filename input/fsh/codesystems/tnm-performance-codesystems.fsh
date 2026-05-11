@@ -2,7 +2,7 @@ CodeSystem: ClinicalTCS
 Id: clinical-t-cs
 Title: "Kenya Clinical T Stage Code System"
 Description: "TNM Clinical T codes from MOH-KENYA KNHTS (CLINICAL-T)"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/clinical-t-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/clinical-t-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #TX "TX"
@@ -17,7 +17,7 @@ CodeSystem: ClinicalNCS
 Id: clinical-n-cs
 Title: "Kenya Clinical N Stage Code System"
 Description: "TNM Clinical N codes from MOH-KENYA KNHTS (CLINICAL-N)"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/clinical-n-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/clinical-n-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #NX "NX"
@@ -30,7 +30,7 @@ CodeSystem: ClinicalMCS
 Id: clinical-m-cs
 Title: "Kenya Clinical M Stage Code System"
 Description: "TNM Clinical M codes from MOH-KENYA KNHTS (CLINICAL-M)"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/clinical-m-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/clinical-m-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #MX "MX"
@@ -41,7 +41,7 @@ CodeSystem: PerformanceStatusECOGCS
 Id: performance-status-ecog-cs
 Title: "Kenya ECOG Performance Status Code System"
 Description: "ECOG performance status codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/performance-status-ecog-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/performance-status-ecog-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #ECOG-0 "ECOG 0"
@@ -54,7 +54,7 @@ CodeSystem: BSAFormulaCS
 Id: bsa-formula-cs
 Title: "Kenya BSA Formula Code System"
 Description: "Body surface area formula codes from MOH-KENYA KNHTS (BSA-FORMULA)"
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/bsa-formula-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/bsa-formula-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #MOSTELLER "Mosteller"

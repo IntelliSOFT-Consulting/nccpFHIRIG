@@ -8,7 +8,7 @@ CodeSystem: CTCAETermsCS
 Id: ctcae-terms-cs
 Title: "Kenya CTCAE Adverse Event Terms Code System"
 Description: "NCI CTCAE v5.0 adverse event terms used in oncology toxicity grading."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/ctcae-terms-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-terms-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #NAUSEA                  "Nausea"
@@ -48,7 +48,7 @@ CodeSystem: CTCAEGradeCS
 Id: ctcae-grade-cs
 Title: "Kenya CTCAE Grade Code System"
 Description: "NCI CTCAE v5.0 severity grades for adverse events."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/ctcae-grade-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-grade-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #GRADE-1  "Grade 1 — Mild"              "Asymptomatic or mild symptoms; no intervention required."
@@ -63,7 +63,7 @@ CodeSystem: CTCAEActionTakenCS
 Id: ctcae-action-taken-cs
 Title: "Kenya CTCAE Action Taken Code System"
 Description: "Codes indicating the clinical action taken in response to an adverse event."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/ctcae-action-taken-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-action-taken-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #NONE                    "No Action"               "No change to treatment; adverse event managed conservatively."
@@ -83,7 +83,7 @@ CodeSystem: RECISTTimepointCS
 Id: recist-timepoint-cs
 Title: "Kenya RECIST Assessment Timepoint Code System"
 Description: "Codes for the scheduled imaging timepoint used in RECIST 1.1 tumour response assessment."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/recist-timepoint-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/recist-timepoint-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #BASELINE             "Baseline"                "Pre-treatment baseline assessment."
@@ -105,7 +105,7 @@ CodeSystem: DiagnosisStatusCS
 Id: diagnosis-status-cs
 Title: "Kenya Oncology Diagnosis Status Code System"
 Description: "Codes indicating the certainty and method of confirmation of an oncology diagnosis."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/diagnosis-status-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/diagnosis-status-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #CONFIRMED-HISTOLOGICAL  "Confirmed — Histological"  "Diagnosis confirmed by tissue histopathology."
@@ -123,7 +123,7 @@ CodeSystem: PractitionerRolesCS
 Id: practitioner-roles-cs
 Title: "Kenya Oncology Practitioner Roles Code System"
 Description: "Codes for clinical and non-clinical roles within the oncology multidisciplinary team."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/practitioner-roles-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/practitioner-roles-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #MEDICAL-ONCOLOGIST       "Medical Oncologist"          "Specialist in systemic cancer therapy."

@@ -8,7 +8,7 @@ CodeSystem: GenericProductsCS
 Id: generic-products-cs
 Title: "Kenya Generic Oncology Products Code System"
 Description: "Generic names of chemotherapy agents and oncology medications used in Kenya."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/generic-products-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/generic-products-cs"
 * ^status = #active
 * ^caseSensitive = true
 // Alkylating agents
@@ -85,7 +85,7 @@ CodeSystem: UnitOfMeasureCS
 Id: unit-of-measure-cs
 Title: "Kenya Oncology Unit of Measure Code System"
 Description: "Units of measure for oncology drug dosing and administration quantities."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/unit-of-measure-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/unit-of-measure-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #MG              "mg"                "Milligrams"
@@ -110,7 +110,7 @@ CodeSystem: MedAdminRouteCS
 Id: med-admin-route-cs
 Title: "Kenya Medication Administration Route Code System"
 Description: "Codes for the route by which oncology medications are administered."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/med-admin-route-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/med-admin-route-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #IV-BOLUS         "Intravenous Bolus"            "Direct IV injection over <5 minutes."
@@ -136,7 +136,7 @@ CodeSystem: SHAInterventionsCS
 Id: sha-interventions-cs
 Title: "Kenya SHA Oncology Interventions Code System"
 Description: "Social Health Authority (SHA) benefit package codes for oncology interventions."
-* ^url = "https://fhir.dha.go.ke/core/CodeSystem/sha-interventions-cs"
+* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/sha-interventions-cs"
 * ^status = #active
 * ^caseSensitive = true
 * #SHA-CHEMO-FIRST-LINE   "SHA: Chemotherapy — First Line"       "First-line chemotherapy regimen."

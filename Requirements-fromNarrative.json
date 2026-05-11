@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "url" : "https://fhir.dha.go.ke/core/Requirements/fromNarrative",
+  "url" : "https://fhir.dha.go.ke/nccp/Requirements/fromNarrative",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",
