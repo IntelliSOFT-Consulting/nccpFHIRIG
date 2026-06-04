@@ -5,10 +5,10 @@
 // ---- PROFILE 32: RadiotherapyServiceRequest ----
 Profile: RadiotherapyServiceRequest
 Parent: ServiceRequest
-Id: ke-nccp-radiotherapy-service-request
+Id: nccp-radiotherapy-service-request
 Title: "NCCP Radiotherapy Service Request"
 Description: "Prescription and referral for radiotherapy treatment, including intent, technique and target volume."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-service-request"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-service-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -38,10 +38,10 @@ Description: "Prescription and referral for radiotherapy treatment, including in
 // ---- PROFILE 33: RadiotherapyPlanDefinition ----
 Profile: RadiotherapyPlanDefinition
 Parent: PlanDefinition
-Id: ke-nccp-radiotherapy-plan-definition
+Id: nccp-radiotherapy-plan-definition
 Title: "NCCP Radiotherapy Plan Definition"
 Description: "Template radiotherapy protocol defining total fractions, dose per fraction and technique."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-plan-definition"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-plan-definition"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -59,16 +59,15 @@ Description: "Template radiotherapy protocol defining total fractions, dose per 
 // ---- PROFILE 35: RadiotherapyTreatmentProcedure ----
 Profile: RadiotherapyTreatmentProcedure
 Parent: Procedure
-Id: ke-nccp-radiotherapy-treatment-procedure
+Id: nccp-radiotherapy-treatment-procedure
 Title: "NCCP Radiotherapy Treatment Procedure"
 Description: "Records a single radiotherapy fraction delivery event, including dose, beam type and machine."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-treatment-procedure"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-treatment-procedure"
 * ^status = #draft
 
 * meta.profile 1..* MS
 * identifier 0..* MS
 * status 1..1 MS
-* status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
@@ -96,10 +95,10 @@ Description: "Records a single radiotherapy fraction delivery event, including d
 // ---- PROFILE 36: RadiotherapyDoseObservation ----
 Profile: RadiotherapyDoseObservation
 Parent: Observation
-Id: ke-nccp-radiotherapy-dose-observation
+Id: nccp-radiotherapy-dose-observation
 Title: "NCCP Radiotherapy Dose Observation"
 Description: "Summarises cumulative dose, dose per fraction and total fractions for a radiotherapy course."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-dose-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-dose-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -121,8 +120,12 @@ Description: "Summarises cumulative dose, dose per fraction and total fractions 
 * component contains
     dosePerFraction 1..1 MS and
     totalFractions 1..1 MS
+* component[dosePerFraction].code 1..1 MS
+* component[dosePerFraction].code = SHAInterventionsCS#SHA-RT-DOSE-PER-FRACTION
 * component[dosePerFraction].value[x] only Quantity
 * component[dosePerFraction].valueQuantity 1..1 MS
+* component[totalFractions].code 1..1 MS
+* component[totalFractions].code = SHAInterventionsCS#SHA-RT-TOTAL-FRACTIONS
 * component[totalFractions].value[x] only integer
 * component[totalFractions].valueInteger 1..1 MS
 * extension contains

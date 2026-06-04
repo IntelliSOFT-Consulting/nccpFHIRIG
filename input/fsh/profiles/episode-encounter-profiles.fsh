@@ -5,16 +5,15 @@
 // ---- PROFILE 4: OncologyEpisodeOfCare ----
 Profile: OncologyEpisodeOfCare
 Parent: EpisodeOfCare
-Id: ke-nccp-oncology-episode-of-care
+Id: nccp-oncology-episode-of-care
 Title: "NCCP Oncology Episode of Care"
 Description: "Represents the full episode of cancer care for a patient, linking diagnosis, care team and managing organization."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-episode-of-care"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-episode-of-care"
 * ^status = #draft
 
 * meta.profile 1..* MS
 * identifier 1..* MS
 * status 1..1 MS
-* status from EpisodeOfCareStatusVS (required)
 * type 1..1 MS
 * type from EpisodeOfCareTypeVS (required)
 * diagnosis.condition 1..1 MS
@@ -34,16 +33,15 @@ Description: "Represents the full episode of cancer care for a patient, linking 
 // ---- PROFILE 5: OncologyEncounter ----
 Profile: OncologyEncounter
 Parent: Encounter
-Id: ke-nccp-oncology-encounter
+Id: nccp-oncology-encounter
 Title: "NCCP Oncology Encounter"
 Description: "An oncology clinical encounter (treatment session, diagnostic visit, consultation) linked to the oncology episode of care."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-encounter"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-encounter"
 * ^status = #draft
 
 * meta.profile 1..* MS
 * identifier 1..1 MS
 * status 1..1 MS
-* status from $VS_ENCOUNTER_STATUS (required)
 * class 1..1 MS
 * class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (required)
 * type 1..* MS

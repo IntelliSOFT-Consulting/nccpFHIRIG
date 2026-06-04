@@ -4,7 +4,7 @@
 # ╰──────────────────────────────────────────────────────────────────────────────────────────╯
 
 id: fhir.ke.nccp
-canonical: https://fhir.dha.go.ke/nccp
+canonical: https://nshr-uat.sha.go.ke/fhir
 name: KenyaNCCPIG
 title: "Kenya National Cancer Control Programme (NCCP) FHIR Implementation Guide"
 description: >-
@@ -63,6 +63,7 @@ pages:
 # ╭──────────────────────────────── Parameters ─────────────────────────────────╮
 parameters:
   shownav: true
+  path-suppressed-warnings: input/ignoreWarnings.txt
 
 # ╭──────────────────────────── Instance Options ───────────────────────────────╮
 instanceOptions:

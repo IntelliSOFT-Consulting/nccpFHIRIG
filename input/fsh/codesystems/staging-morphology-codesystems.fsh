@@ -2,8 +2,9 @@ CodeSystem: CancerStageSummaryCS
 Id: cancer-stage-summary-cs
 Title: "Kenya Cancer Stage Summary Code System"
 Description: "Cancer stage summary codes from MOH-KENYA KNHTS (CANCER-STAGE-SUMMARY)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/cancer-stage-summary-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/cancer-stage-summary-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #STAGE-1 "Stage 1"
 * #STAGE-2 "Stage 2"
@@ -14,19 +15,27 @@ CodeSystem: CancerStageTypeCS
 Id: cancer-stage-type-cs
 Title: "Kenya Cancer Stage Type Code System"
 Description: "Cancer stage type codes from MOH-KENYA KNHTS (CANCER-STAGE-TYPE)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/cancer-stage-type-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/cancer-stage-type-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
-* #CLINICAL-STAGE-TYPE "Clinical Stage Type"
+* #CLINICAL-STAGE-TYPE     "Clinical Stage Type"
 * #PATHOLOGICAL-STAGE-TYPE "Pathological Stage Type"
 * #POST-THERAPY-STAGE-TYPE "Post Therapy Stage Type"
+* #CLINICAL-T              "Clinical T Stage"
+* #CLINICAL-N              "Clinical N Stage"
+* #CLINICAL-M              "Clinical M Stage"
+* #OVERALL-STAGE           "Overall Stage"
+* #TUMOUR-GRADE            "Tumour Grade"
+* #TNM-LATERALITY          "Laterality (TNM)"
 
 CodeSystem: MorphologyCodesCS
 Id: morphology-codes-cs
 Title: "Kenya Morphology Codes Code System"
 Description: "Morphology codes from MOH-KENYA KNHTS (MORPHOLOGY-CODES)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/morphology-codes-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/morphology-codes-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #CARCINOMA-NOS "Carcinoma NOS"
 * #ADENOCARCINOMA "Adenocarcinoma"
@@ -69,8 +78,9 @@ CodeSystem: MorphologyMethodCS
 Id: morphology-method-cs
 Title: "Kenya Morphology Method Code System"
 Description: "Morphology method codes from MOH-KENYA KNHTS (MORPHOLOGY-METHOD)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/morphology-method-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/morphology-method-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #BIOPSY "Biopsy"
 * #CYTOLOGY "Cytology"

@@ -5,10 +5,10 @@
 // ---- PROFILE 27: RECISTBaselineObservation ----
 Profile: RECISTBaselineObservation
 Parent: Observation
-Id: ke-nccp-recist-baseline-observation
+Id: nccp-recist-baseline-observation
 Title: "NCCP RECIST Baseline Observation"
 Description: "Records baseline tumour measurements at the start of therapy for RECIST response assessment."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-baseline-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-baseline-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -33,10 +33,10 @@ Description: "Records baseline tumour measurements at the start of therapy for R
 // ---- PROFILE 28: RECISTTargetLesionObservation ----
 Profile: RECISTTargetLesionObservation
 Parent: Observation
-Id: ke-nccp-recist-target-lesion-observation
+Id: nccp-recist-target-lesion-observation
 Title: "NCCP RECIST Target Lesion Observation"
 Description: "Records measurement of a single RECIST target lesion at a specific timepoint."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-target-lesion-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-target-lesion-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -61,10 +61,10 @@ Description: "Records measurement of a single RECIST target lesion at a specific
 // ---- PROFILE 29: RECISTNonTargetLesionObservation ----
 Profile: RECISTNonTargetLesionObservation
 Parent: Observation
-Id: ke-nccp-recist-non-target-lesion-observation
+Id: nccp-recist-non-target-lesion-observation
 Title: "NCCP RECIST Non-Target Lesion Observation"
 Description: "Records qualitative assessment of RECIST non-target lesions."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-non-target-lesion-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-non-target-lesion-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -85,10 +85,10 @@ Description: "Records qualitative assessment of RECIST non-target lesions."
 // ---- PROFILE 30: RECISTNewLesionObservation ----
 Profile: RECISTNewLesionObservation
 Parent: Observation
-Id: ke-nccp-recist-new-lesion-observation
+Id: nccp-recist-new-lesion-observation
 Title: "NCCP RECIST New Lesion Observation"
 Description: "Records presence or absence of new lesions at a RECIST assessment timepoint."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-new-lesion-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-new-lesion-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -107,10 +107,10 @@ Description: "Records presence or absence of new lesions at a RECIST assessment 
 // ---- PROFILE 31: RECISTResponseAssessmentObservation ----
 Profile: RECISTResponseAssessmentObservation
 Parent: Observation
-Id: ke-nccp-recist-response-assessment-observation
+Id: nccp-recist-response-assessment-observation
 Title: "NCCP RECIST Overall Response Assessment Observation"
 Description: "Records the overall RECIST tumour response assessment (CR, PR, SD, PD) at a given timepoint."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-response-assessment-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-response-assessment-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS

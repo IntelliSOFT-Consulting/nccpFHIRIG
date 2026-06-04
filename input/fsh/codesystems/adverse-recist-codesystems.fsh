@@ -2,8 +2,9 @@ CodeSystem: AdverseEventCategoryCS
 Id: adverse-event-category-cs
 Title: "Kenya Adverse Event Category Code System"
 Description: "Adverse event category codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/adverse-event-category-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/adverse-event-category-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #MEDICATION-MISHAP "Medication Mishap"
 * #PRODUCT-USE-ERROR "Product Use Error"
@@ -15,8 +16,9 @@ CodeSystem: CTCAEOutcomeCS
 Id: ctcae-outcome-cs
 Title: "Kenya CTCAE Outcome Code System"
 Description: "CTCAE outcome codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-outcome-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/ctcae-outcome-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #RECOVERED "Recovered"
 * #RECOVERING "Recovering"
@@ -29,8 +31,9 @@ CodeSystem: CTCAEAttributionCS
 Id: ctcae-attribution-cs
 Title: "Kenya CTCAE Attribution Code System"
 Description: "CTCAE attribution/causality codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-attribution-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/ctcae-attribution-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #UNRELATED "Unrelated"
 * #UNLIKELY "Unlikely"
@@ -42,8 +45,9 @@ CodeSystem: RECISTResponseCS
 Id: recist-response-cs
 Title: "Kenya RECIST Response Code System"
 Description: "RECIST response assessment codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/recist-response-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/recist-response-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #COMPLETE-RESPONSE "Complete Response"
 * #PARTIAL-RESPONSE "Partial Response"

@@ -135,3 +135,9 @@ This IG is built on the following principles aligned with Kenya's national digit
   at <a href="mailto:info@dha.go.ke">info@dha.go.ke</a> or visit
   <a href="https://dha.go.ke" no-external="true">dha.go.ke</a>.
 </div>
+
+---
+
+{% include globals-table.xhtml %}
+
+{% include ip-statements.xhtml %}

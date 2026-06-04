@@ -1,5 +1,19 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+# ── Inline script warnings (template-generated, not content issues) ────────────
+# The fhir2.base.template#current generates inline <script> blocks on every
+# StructureDefinition page (FHIRPath tester, differential tree). These are
+# flagged only for HL7 CI-build domains; nshr-uat.sha.go.ke is not HL7 CI.
+The <script> containing the javascript
+
+# ── Network errors (offline build artefacts) ──────────────────────────────────
+# Warnings generated when the FHIR terminology server (tx.fhir.org) is
+# unreachable during a local build. Not present in online CI builds.
+java.net.UnknownHostException: tx.fhir.org
+java.net.SocketException: Network is unreachable
+
+# ── Extensions without dedicated example instances ────────────────────────────
+# These extensions ARE used inside profile definitions but are optional
+# elements not populated in the current example set. A future release will
+# add richer examples covering these extensions.
+The Implementation Guide contains no examples for this extension

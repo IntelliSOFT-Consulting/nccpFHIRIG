@@ -2,8 +2,9 @@ CodeSystem: ClinicalTCS
 Id: clinical-t-cs
 Title: "Kenya Clinical T Stage Code System"
 Description: "TNM Clinical T codes from MOH-KENYA KNHTS (CLINICAL-T)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/clinical-t-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/clinical-t-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #TX "TX"
 * #T0 "T0"
@@ -17,8 +18,9 @@ CodeSystem: ClinicalNCS
 Id: clinical-n-cs
 Title: "Kenya Clinical N Stage Code System"
 Description: "TNM Clinical N codes from MOH-KENYA KNHTS (CLINICAL-N)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/clinical-n-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/clinical-n-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #NX "NX"
 * #N0 "N0"
@@ -30,8 +32,9 @@ CodeSystem: ClinicalMCS
 Id: clinical-m-cs
 Title: "Kenya Clinical M Stage Code System"
 Description: "TNM Clinical M codes from MOH-KENYA KNHTS (CLINICAL-M)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/clinical-m-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/clinical-m-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #MX "MX"
 * #M0 "M0"
@@ -41,8 +44,9 @@ CodeSystem: PerformanceStatusECOGCS
 Id: performance-status-ecog-cs
 Title: "Kenya ECOG Performance Status Code System"
 Description: "ECOG performance status codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/performance-status-ecog-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/performance-status-ecog-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #ECOG-0 "ECOG 0"
 * #ECOG-1 "ECOG 1"
@@ -54,8 +58,9 @@ CodeSystem: BSAFormulaCS
 Id: bsa-formula-cs
 Title: "Kenya BSA Formula Code System"
 Description: "Body surface area formula codes from MOH-KENYA KNHTS (BSA-FORMULA)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/bsa-formula-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/bsa-formula-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #MOSTELLER "Mosteller"
 * #DUBOIS "DuBois"

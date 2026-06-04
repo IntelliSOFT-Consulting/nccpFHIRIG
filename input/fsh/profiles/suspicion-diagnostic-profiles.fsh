@@ -5,10 +5,10 @@
 // ---- PROFILE 14: CancerSuspicionObservation ----
 Profile: CancerSuspicionObservation
 Parent: Observation
-Id: ke-nccp-cancer-suspicion-observation
+Id: nccp-cancer-suspicion-observation
 Title: "NCCP Cancer Suspicion Observation"
 Description: "Records the clinical suspicion of cancer prior to confirmed diagnosis, capturing suspicion level and reasons."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-cancer-suspicion-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cancer-suspicion-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -33,26 +33,36 @@ Description: "Records the clinical suspicion of cancer prior to confirmed diagno
     reasonForSuspicion 1..* MS and
     presentingSymptoms 0..1 MS and
     plannedDiagnosticWorkup 0..1 MS
+* component[suspectedCancerType].code 1..1 MS
+* component[suspectedCancerType].code = SHAInterventionsCS#SHA-SUSPECTED-CANCER-TYPE
 * component[suspectedCancerType].value[x] only string
 * component[suspectedCancerType].valueString 1..1 MS
+* component[suspicionLevel].code 1..1 MS
+* component[suspicionLevel].code = SHAInterventionsCS#SHA-SUSPICION-LEVEL
 * component[suspicionLevel].value[x] only CodeableConcept
 * component[suspicionLevel].valueCodeableConcept 1..1 MS
 * component[suspicionLevel].valueCodeableConcept from CancerSuspicionLevelVS (required)
+* component[reasonForSuspicion].code 1..1 MS
+* component[reasonForSuspicion].code = SHAInterventionsCS#SHA-REASON-FOR-SUSPICION
 * component[reasonForSuspicion].value[x] only CodeableConcept
 * component[reasonForSuspicion].valueCodeableConcept 1..1 MS
 * component[reasonForSuspicion].valueCodeableConcept from ReasonForSuspicionVS (required)
+* component[presentingSymptoms].code 1..1 MS
+* component[presentingSymptoms].code = SHAInterventionsCS#SHA-PRESENTING-SYMPTOMS
 * component[presentingSymptoms].value[x] only string
 * component[presentingSymptoms].valueString 1..1 MS
+* component[plannedDiagnosticWorkup].code 1..1 MS
+* component[plannedDiagnosticWorkup].code = SHAInterventionsCS#SHA-DIAGNOSTIC-WORKUP
 * component[plannedDiagnosticWorkup].value[x] only string
 * component[plannedDiagnosticWorkup].valueString 1..1 MS
 
 // ---- PROFILE 15: OncologyDiagnosticServiceRequest ----
 Profile: OncologyDiagnosticServiceRequest
 Parent: ServiceRequest
-Id: ke-nccp-oncology-diagnostic-service-request
+Id: nccp-oncology-diagnostic-service-request
 Title: "NCCP Oncology Diagnostic Service Request"
 Description: "Electronic request for diagnostic investigations (lab, imaging, pathology) in the oncology workflow."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnostic-service-request"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnostic-service-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -64,7 +74,6 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 * category 1..* MS
 * category from $VS_SHA_INTERVENTIONS (required)
 * priority 1..1 MS
-* priority from DiagnosticTestUrgencyVS (required)
 * code 1..1 MS
 * code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
@@ -87,10 +96,10 @@ Description: "Electronic request for diagnostic investigations (lab, imaging, pa
 // ---- PROFILE 16: OncologyDiagnosticReport ----
 Profile: OncologyDiagnosticReport
 Parent: DiagnosticReport
-Id: ke-nccp-oncology-diagnostic-report
+Id: nccp-oncology-diagnostic-report
 Title: "NCCP Oncology Diagnostic Report"
 Description: "Diagnostic report for oncology investigations including pathology and radiology."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnostic-report"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnostic-report"
 * ^status = #draft
 
 * meta.profile 1..* MS

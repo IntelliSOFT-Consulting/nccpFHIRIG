@@ -5,10 +5,10 @@
 // ---- PROFILE 1: OncologyCareplan ----
 Profile: OncologyCareplan
 Parent: CarePlan
-Id: ke-nccp-oncology-careplan
+Id: nccp-oncology-careplan
 Title: "NCCP Oncology Care Plan"
 Description: "Represents a structured oncology treatment care plan (chemotherapy, radiotherapy or multimodal) for a patient under the National Cancer Control Programme."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-careplan"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-careplan"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -55,10 +55,10 @@ Description: "Represents a structured oncology treatment care plan (chemotherapy
 // ---- PROFILE 34: RadiotherapyCarePlan ----
 Profile: RadiotherapyCarePlan
 Parent: CarePlan
-Id: ke-nccp-radiotherapy-care-plan
+Id: nccp-radiotherapy-care-plan
 Title: "NCCP Radiotherapy Care Plan"
 Description: "Radiotherapy-specific care plan capturing fractions, dose per fraction, technique and target volume."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-care-plan"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-care-plan"
 * ^status = #draft
 
 * meta.profile 1..* MS

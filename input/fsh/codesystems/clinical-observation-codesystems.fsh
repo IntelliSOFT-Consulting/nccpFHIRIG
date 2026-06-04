@@ -8,8 +8,9 @@ CodeSystem: CTCAETermsCS
 Id: ctcae-terms-cs
 Title: "Kenya CTCAE Adverse Event Terms Code System"
 Description: "NCI CTCAE v5.0 adverse event terms used in oncology toxicity grading."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-terms-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/ctcae-terms-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #NAUSEA                  "Nausea"
 * #VOMITING                "Vomiting"
@@ -48,8 +49,9 @@ CodeSystem: CTCAEGradeCS
 Id: ctcae-grade-cs
 Title: "Kenya CTCAE Grade Code System"
 Description: "NCI CTCAE v5.0 severity grades for adverse events."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-grade-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/ctcae-grade-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #GRADE-1  "Grade 1 — Mild"              "Asymptomatic or mild symptoms; no intervention required."
 * #GRADE-2  "Grade 2 — Moderate"          "Moderate symptoms; minimal local or non-invasive intervention."
@@ -63,8 +65,9 @@ CodeSystem: CTCAEActionTakenCS
 Id: ctcae-action-taken-cs
 Title: "Kenya CTCAE Action Taken Code System"
 Description: "Codes indicating the clinical action taken in response to an adverse event."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/ctcae-action-taken-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/ctcae-action-taken-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #NONE                    "No Action"               "No change to treatment; adverse event managed conservatively."
 * #DOSE-REDUCED            "Dose Reduced"            "Subsequent dose reduced per dose-modification guidelines."
@@ -83,8 +86,9 @@ CodeSystem: RECISTTimepointCS
 Id: recist-timepoint-cs
 Title: "Kenya RECIST Assessment Timepoint Code System"
 Description: "Codes for the scheduled imaging timepoint used in RECIST 1.1 tumour response assessment."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/recist-timepoint-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/recist-timepoint-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #BASELINE             "Baseline"                "Pre-treatment baseline assessment."
 * #WEEK-4               "Week 4"                  "Interim assessment at 4 weeks."
@@ -105,8 +109,9 @@ CodeSystem: DiagnosisStatusCS
 Id: diagnosis-status-cs
 Title: "Kenya Oncology Diagnosis Status Code System"
 Description: "Codes indicating the certainty and method of confirmation of an oncology diagnosis."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/diagnosis-status-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/diagnosis-status-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #CONFIRMED-HISTOLOGICAL  "Confirmed — Histological"  "Diagnosis confirmed by tissue histopathology."
 * #CONFIRMED-CYTOLOGICAL   "Confirmed — Cytological"   "Diagnosis confirmed by cytology (FNA, exfoliative)."
@@ -123,8 +128,9 @@ CodeSystem: PractitionerRolesCS
 Id: practitioner-roles-cs
 Title: "Kenya Oncology Practitioner Roles Code System"
 Description: "Codes for clinical and non-clinical roles within the oncology multidisciplinary team."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/practitioner-roles-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/practitioner-roles-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #MEDICAL-ONCOLOGIST       "Medical Oncologist"          "Specialist in systemic cancer therapy."
 * #RADIATION-ONCOLOGIST     "Radiation Oncologist"        "Specialist in radiotherapy."

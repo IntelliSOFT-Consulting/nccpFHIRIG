@@ -5,10 +5,10 @@
 // ---- PROFILE 25: CTCAEAdverseEventObservation ----
 Profile: CTCAEAdverseEventObservation
 Parent: Observation
-Id: ke-nccp-ctcae-adverse-event-observation
+Id: nccp-ctcae-adverse-event-observation
 Title: "NCCP CTCAE Adverse Event Observation"
 Description: "Records a CTCAE-graded adverse event observation linked to a chemotherapy administration."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-ctcae-adverse-event-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-ctcae-adverse-event-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -38,10 +38,10 @@ Description: "Records a CTCAE-graded adverse event observation linked to a chemo
 // ---- PROFILE 26: OncologyAdverseEvent ----
 Profile: OncologyAdverseEvent
 Parent: AdverseEvent
-Id: ke-nccp-oncology-adverse-event
+Id: nccp-oncology-adverse-event
 Title: "NCCP Oncology Adverse Event"
 Description: "Captures an oncology adverse event including CTCAE grade, attribution and actions taken."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-adverse-event"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-adverse-event"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -60,7 +60,6 @@ Description: "Captures an oncology adverse event including CTCAE grade, attribut
 * detected 0..1 MS
 * severity 1..1 MS
 * outcome 1..1 MS
-* outcome from CTCAEOutcomeVS (required)
 * recorder 1..1 MS
 * recorder only Reference(Practitioner)
 * suspectEntity.instance 1..1 MS

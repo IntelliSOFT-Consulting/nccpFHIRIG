@@ -5,10 +5,10 @@
 // ---- PROFILE 9: ChemotherapyMedicationRequest ----
 Profile: ChemotherapyMedicationRequest
 Parent: MedicationRequest
-Id: ke-nccp-chemotherapy-medication-request
+Id: nccp-chemotherapy-medication-request
 Title: "NCCP Chemotherapy Medication Request"
 Description: "Electronic prescription for a chemotherapy agent, including dose, route, cycle timing and BSA-based dosing details."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-chemotherapy-medication-request"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-chemotherapy-medication-request"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -45,7 +45,6 @@ Description: "Electronic prescription for a chemotherapy agent, including dose, 
 * dosageInstruction.timing.repeat.frequency 0..1 MS
 * dosageInstruction.timing.repeat.period 0..1 MS
 * dosageInstruction.timing.repeat.periodUnit 1..1 MS
-* dosageInstruction.timing.repeat.periodUnit from $VS_UOM (required)
 * dispenseRequest.quantity 0..1 MS
 * dispenseRequest.expectedSupplyDuration 0..1 MS
 * note 0..* MS
@@ -63,10 +62,10 @@ Description: "Electronic prescription for a chemotherapy agent, including dose, 
 // ---- PROFILE 10: OncologyMedicationAdministration ----
 Profile: OncologyMedicationAdministration
 Parent: MedicationAdministration
-Id: ke-nccp-oncology-medication-administration
+Id: nccp-oncology-medication-administration
 Title: "NCCP Oncology Medication Administration"
 Description: "Records the actual administration of a chemotherapy agent during a treatment session."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-medication-administration"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-medication-administration"
 * ^status = #draft
 
 * meta.profile 1..* MS

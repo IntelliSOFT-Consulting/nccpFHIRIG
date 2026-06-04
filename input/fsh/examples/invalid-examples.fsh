@@ -1,3 +1,4 @@
+/*
 // ============================================================
 // INVALID PROFILE EXAMPLES — ValueSet binding violations only
 // Every instance satisfies all cardinality constraints so the
@@ -18,8 +19,8 @@ InstanceOf: OncologyCareplan
 Title: "OncologyCareplan – INVALID: regimenCode 'WRONG-REGIMEN' not in TreatmentCourseCodesVS"
 Description: "INVALID OncologyCareplan. Violations: extension:regimenCode valueCoding 'WRONG-REGIMEN' from http://example.com/wrong-system is not in TreatmentCourseCodesVS (required binding); valid values: AC AC-T AC-TH CMF FAC FEC TC FOLFOX FOLFIRI CHOP R-CHOP ABVD BEP and others from TreatmentCourseCodesCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-careplan"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/careplan-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-careplan"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/careplan-id"
 * identifier[0].value = "INVALID-CP-001"
 * status = #active
 * intent = #plan
@@ -43,8 +44,8 @@ InstanceOf: RadiotherapyCarePlan
 Title: "RadiotherapyCarePlan – INVALID: rtIntent 'WRONG-INTENT' not in RTIntentVS"
 Description: "INVALID RadiotherapyCarePlan. Violations: extension:rtIntent valueCode 'WRONG-INTENT' from http://example.com/wrong-system is not in RTIntentVS (required binding); valid values: PALLIATIVE ADJUVANT NEO-ADJUVANT PROPHYLACTIC SALVAGE STEREOTACTIC RADIOSURGERY CONCURRENT-CRT."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-care-plan"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/rt-careplan-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-care-plan"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/rt-careplan-id"
 * identifier[0].value = "INVALID-RT-CP-001"
 * status = #active
 * intent = #plan
@@ -69,7 +70,7 @@ InstanceOf: OncologyDiagnosisCondition
 Title: "OncologyDiagnosisCondition – INVALID: diagnosisStatus 'WRONG-STATUS' not in DiagnosisStatusVS"
 Description: "INVALID OncologyDiagnosisCondition. Violations: extension:diagnosisStatus valueCode 'WRONG-STATUS' from http://example.com/wrong-system is not in DiagnosisStatusVS (required binding); valid values: CONFIRMED-HISTOLOGICAL CONFIRMED-CYTOLOGICAL CONFIRMED-CLINICAL CONFIRMED-MOLECULAR SUSPECTED RULED-OUT DIFFERENTIAL INCIDENTAL."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnosis-condition"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnosis-condition"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * category[0] = ConditionCategoryCS#ENCOUNTER-DIAGNOSIS "Encounter Diagnosis"
@@ -88,7 +89,7 @@ InstanceOf: MorphologyObservation
 Title: "MorphologyObservation – INVALID: code 'NOT-A-LOINC' not in observation-codes ValueSet"
 Description: "INVALID MorphologyObservation. Violations: code 'NOT-A-LOINC' from http://example.com/wrong-system is not in observation-codes (http://hl7.org/fhir/ValueSet/observation-codes, required binding); valid: use a LOINC code, e.g., 33752-8 (Histology study) or 22634-0 (Pathology report)."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-morphology-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-morphology-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
 * code = http://example.com/wrong-system#NOT-A-LOINC "Invalid — not in observation-codes VS"
@@ -105,8 +106,8 @@ InstanceOf: OncologyEpisodeOfCare
 Title: "OncologyEpisodeOfCare – INVALID: status 'NOT-VALID' not in EpisodeOfCareStatusVS"
 Description: "INVALID OncologyEpisodeOfCare. Violations: status 'NOT-VALID' from http://example.com/wrong-system is not in EpisodeOfCareStatusVS (required binding); valid values: planned waitlist active onhold finished cancelled entered-in-error."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-episode-of-care"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/episode-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-episode-of-care"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/episode-id"
 * identifier[0].value = "INVALID-EOC-001"
 * status = http://example.com/wrong-system#NOT-VALID "Not a valid EpisodeOfCare status"
 * type[0] = EpisodeOfCareTypeCS#CANCER-CARE-PROGRAM "Cancer Care Program"
@@ -121,8 +122,8 @@ InstanceOf: OncologyEncounter
 Title: "OncologyEncounter – INVALID: type 'WRONG-TYPE' not in OncologyEncounterTypeVS"
 Description: "INVALID OncologyEncounter. Violations: type 'WRONG-TYPE' from http://example.com/wrong-system is not in OncologyEncounterTypeVS (required binding); valid values: TREATMENT-ENCOUNTER DIAGNOSTIC-ENCOUNTER RESTAGING-ENCOUNTER FOLLOW-UP-ENCOUNTER CONSULTATION-ENCOUNTER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-encounter"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/encounter-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-encounter"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/encounter-id"
 * identifier[0].value = "INVALID-ENC-001"
 * status = EncounterStatusCS#in-progress "In Progress"
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
@@ -141,7 +142,7 @@ InstanceOf: OncologyCareTeam
 Title: "OncologyCareTeam – INVALID: category 'WRONG-CATEGORY' not in CareTeamCategoryVS"
 Description: "INVALID OncologyCareTeam. Violations: category 'WRONG-CATEGORY' from http://example.com/wrong-system is not in CareTeamCategoryVS (required binding); valid values: ENCOUNTER-CARE-TEAM EPISODE-CARE-TEAM LONGITUDINAL-CARE-TEAM MULTIDISCIPLINARY-TUMOR-BOARD."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-care-team"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-care-team"
 * status = #active
 * category[0] = http://example.com/wrong-system#WRONG-CATEGORY "Wrong care team category"
 * subject = Reference(Patient/example-patient)
@@ -156,9 +157,9 @@ InstanceOf: OncologyPlanDefinition
 Title: "OncologyPlanDefinition – INVALID: type 'WRONG-TYPE' not in PlanDefinitionTypeVS"
 Description: "INVALID OncologyPlanDefinition. Violations: type 'WRONG-TYPE' from http://example.com/wrong-system is not in PlanDefinitionTypeVS (required binding); valid values: REGIMEN-TEMPLATE RADIOTHERAPY-PROTOCOL INVESTIGATION-PROTOCOL."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-plan-definition"
-* url = "https://fhir.dha.go.ke/nccp/PlanDefinition/invalid-regimen"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/regimen-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-plan-definition"
+* url = "https://nshr-uat.sha.go.ke/fhir/PlanDefinition/invalid-regimen"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/regimen-id"
 * identifier[0].value = "INVALID-REG-001"
 * title = "Invalid Regimen — wrong type code"
 * status = #active
@@ -173,8 +174,8 @@ InstanceOf: OncologyRequestGroup
 Title: "OncologyRequestGroup – INVALID: intent 'WRONG-INTENT' not in request-intent ValueSet"
 Description: "INVALID OncologyRequestGroup. Violations: intent 'WRONG-INTENT' from http://example.com/wrong-system is not in request-intent (http://hl7.org/fhir/ValueSet/request-intent, required binding); valid values: proposal plan directive order original-order reflex-order filler-order instance-order option."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-request-group"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/request-group-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-request-group"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/request-group-id"
 * identifier[0].value = "INVALID-RG-001"
 * status = #active
 * intent = http://example.com/wrong-system#WRONG-INTENT "Wrong intent code"
@@ -191,8 +192,8 @@ InstanceOf: ChemotherapyMedicationRequest
 Title: "ChemotherapyMedicationRequest – INVALID: clinicalCategory 'WRONG-CATEGORY' not in MedClinicalCategoryVS"
 Description: "INVALID ChemotherapyMedicationRequest. Violations: extension:clinicalCategory valueCode 'WRONG-CATEGORY' from http://example.com/wrong-system is not in MedClinicalCategoryVS (required binding); valid values: CHEMOTHERAPY IMMUNOTHERAPY TARGETED-THERAPY HORMONAL-THERAPY SUPPORTIVE-CARE ANTI-EMETIC GROWTH-FACTOR CORTICOSTEROID BISPHOSPHONATE ANALGESIC."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-chemotherapy-medication-request"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/med-request-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-chemotherapy-medication-request"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/med-request-id"
 * identifier[0].value = "INVALID-MR-001"
 * status = #active
 * intent = #order
@@ -206,7 +207,7 @@ Usage: #example
 * dosageInstruction[0].route = RouteOfAdministrationCS#RT10036 "Intravenous"
 * dosageInstruction[0].doseAndRate[0].doseQuantity.value = 60
 * dosageInstruction[0].doseAndRate[0].doseQuantity.unit = "mg/m2"
-* dosageInstruction[0].doseAndRate[0].doseQuantity.system = "https://fhir.dha.go.ke/nccp/CodeSystem/unit-of-measure-cs"
+* dosageInstruction[0].doseAndRate[0].doseQuantity.system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
 * dosageInstruction[0].doseAndRate[0].doseQuantity.code = #MG-PER-M2
 * extension[cycleDayStart].valueInteger = 1
 * extension[cycleDayEnd].valueInteger = 1
@@ -218,7 +219,7 @@ InstanceOf: OncologyMedicationAdministration
 Title: "OncologyMedicationAdministration – INVALID: dosage.route 'WRONG-ROUTE' not in MedAdminRouteVS"
 Description: "INVALID OncologyMedicationAdministration. Violations: dosage.route 'WRONG-ROUTE' from http://example.com/wrong-system is not in MedAdminRouteVS (required binding); valid values: IV-BOLUS IV-PUSH IV-INFUSION-SHORT IV-INFUSION-LONG ORAL SUBCUTANEOUS INTRAMUSCULAR INTRATHECAL and others from MedAdminRouteCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-medication-administration"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-medication-administration"
 * status = #completed
 * category = http://terminology.hl7.org/CodeSystem/medication-admin-category#inpatient "Inpatient"
 * medicationCodeableConcept = GenericProductsCS#CYCLOPHOSPHAMIDE "Cyclophosphamide"
@@ -241,7 +242,7 @@ InstanceOf: TNMStagingObservation
 Title: "TNMStagingObservation – INVALID: component[clinicalT] value 'T-WRONG' not in ClinicalTVS"
 Description: "INVALID TNMStagingObservation. Violations: component:clinicalT valueCodeableConcept 'T-WRONG' from http://example.com/wrong-system is not in ClinicalTVS (required binding); valid values: TX T0 TIS T1 T2 T3 T4."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-tnm-staging-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-tnm-staging-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
@@ -265,7 +266,7 @@ InstanceOf: PerformanceStatusObservation
 Title: "PerformanceStatusObservation – INVALID: valueCodeableConcept 'ECOG-WRONG' not in PerformanceStatusECOGVS"
 Description: "INVALID PerformanceStatusObservation. Violations: valueCodeableConcept 'ECOG-WRONG' from http://example.com/wrong-system is not in PerformanceStatusECOGVS (required binding); valid values: ECOG-0 ECOG-1 ECOG-2 ECOG-3 ECOG-4."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-performance-status-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-performance-status-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
 * code = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
@@ -281,7 +282,7 @@ InstanceOf: BodySurfaceAreaObservation
 Title: "BodySurfaceAreaObservation – INVALID: method 'WRONG-FORMULA' not in BSAFormulaVS"
 Description: "INVALID BodySurfaceAreaObservation. Violations: method 'WRONG-FORMULA' from http://example.com/wrong-system is not in BSAFormulaVS (required binding); valid values: MOSTELLER DUBOIS BSA-OTHER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-body-surface-area-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-body-surface-area-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
 * code = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
@@ -300,7 +301,7 @@ InstanceOf: CancerSuspicionObservation
 Title: "CancerSuspicionObservation – INVALID: suspicionLevel 'WRONG-LEVEL' not in CancerSuspicionLevelVS"
 Description: "INVALID CancerSuspicionObservation. Violations: component:suspicionLevel valueCodeableConcept 'WRONG-LEVEL' from http://example.com/wrong-system is not in CancerSuspicionLevelVS (required binding); valid values: SUSPICION-LOW SUSPICION-MODERATE SUSPICION-HIGH."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-cancer-suspicion-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cancer-suspicion-observation"
 * status = #preliminary
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#exam "Exam"
 * code = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
@@ -320,8 +321,8 @@ InstanceOf: OncologyDiagnosticServiceRequest
 Title: "OncologyDiagnosticServiceRequest – INVALID: priority 'NOT-IN-VS' not in DiagnosticTestUrgencyVS"
 Description: "INVALID OncologyDiagnosticServiceRequest. Violations: priority 'NOT-IN-VS' from http://example.com/wrong-system is not in DiagnosticTestUrgencyVS (required binding); valid values: STAT URGENT ROUTINE."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnostic-service-request"
-* identifier[0].system = "https://fhir.dha.go.ke/nccp/service-request-id"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnostic-service-request"
+* identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/service-request-id"
 * identifier[0].value = "INVALID-SR-001"
 * status = #active
 * intent = #order
@@ -340,7 +341,7 @@ InstanceOf: OncologyDiagnosticReport
 Title: "OncologyDiagnosticReport – INVALID: category 'WRONG-CAT' not in diagnostic-service-sections"
 Description: "INVALID OncologyDiagnosticReport. Violations: category 'WRONG-CAT' from http://example.com/wrong-system is not in diagnostic-service-sections (http://hl7.org/fhir/ValueSet/diagnostic-service-sections, required binding); valid values include: PAT (Pathology) RAD (Radiology) LAB (Laboratory) and others from v2-0074."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnostic-report"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnostic-report"
 * status = #final
 * category[0] = http://example.com/wrong-system#WRONG-CAT "Wrong diagnostic service section"
 * code = http://loinc.org#60568-3 "Pathology Synoptic report"
@@ -356,7 +357,7 @@ InstanceOf: PriorSurgeryProcedure
 Title: "PriorSurgeryProcedure – INVALID: code 'WRONG-CODE' not in SHAInterventionsVS"
 Description: "INVALID PriorSurgeryProcedure. Violations: code 'WRONG-CODE' from http://example.com/wrong-system is not in SHAInterventionsVS (required binding); valid values include: SHA-SURGERY-CURATIVE SHA-SURGERY-PALLIATIVE and others from SHAInterventionsCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-surgery-procedure"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-surgery-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-SURGERY-CURATIVE "SHA: Surgery — Curative"
 * code = http://example.com/wrong-system#WRONG-CODE "Wrong SHA intervention code"
@@ -369,7 +370,7 @@ InstanceOf: PriorRadiotherapyProcedure
 Title: "PriorRadiotherapyProcedure – INVALID: bodySite 'WRONG-SITE' not in CancerPrimarySiteVS"
 Description: "INVALID PriorRadiotherapyProcedure. Violations: bodySite 'WRONG-SITE' from http://example.com/wrong-system is not in CancerPrimarySiteVS (required binding); valid values: BREAST CERVIX-UTERI PROSTATE LUNG COLON LIVER and others from CancerPrimarySiteCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-radiotherapy-procedure"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-radiotherapy-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
 * code = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
@@ -384,7 +385,7 @@ InstanceOf: PriorBMTProcedure
 Title: "PriorBMTProcedure – INVALID: bmtType 'WRONG-BMT' not in BMTTypeVS"
 Description: "INVALID PriorBMTProcedure. Violations: extension:bmtType valueCode 'WRONG-BMT' from http://example.com/wrong-system is not in BMTTypeVS (required binding); valid values: AUTOLOGOUS ALLOGENEIC-MATCHED-SIBLING ALLOGENEIC-MATCHED-UNRELATED HAPLOIDENTICAL CORD-BLOOD TANDEM."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-bmt-procedure"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-bmt-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-BMT-AUTOLOGOUS "SHA: BMT — Autologous"
 * code = SHAInterventionsCS#SHA-BMT-AUTOLOGOUS "SHA: BMT — Autologous"
@@ -398,7 +399,7 @@ InstanceOf: PriorSystemicTherapyStatement
 Title: "PriorSystemicTherapyStatement – INVALID: medication 'TAMOXIFEN-XX' not in GenericProductsVS"
 Description: "INVALID PriorSystemicTherapyStatement. Violations: medicationCodeableConcept 'TAMOXIFEN-XX' from http://example.com/wrong-drugs is not in GenericProductsVS (required binding); medication must come from the Kenya formulary. Valid: GenericProductsCS#TAMOXIFEN GenericProductsCS#LETROZOLE GenericProductsCS#ANASTROZOLE and others from GenericProductsCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-systemic-therapy-statement"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-systemic-therapy-statement"
 * status = #completed
 * category = MedClinicalCategoryCS#HORMONAL-THERAPY "Hormonal Therapy"
 * medicationCodeableConcept = http://example.com/wrong-drugs#TAMOXIFEN-XX "Wrong drug code"
@@ -412,7 +413,7 @@ InstanceOf: OncologyReferralServiceRequest
 Title: "OncologyReferralServiceRequest – INVALID: referralSource 'WRONG-SOURCE' not in ReferralSourceVS"
 Description: "INVALID OncologyReferralServiceRequest. Violations: extension:referralSource valueCode 'WRONG-SOURCE' from http://example.com/wrong-system is not in ReferralSourceVS (required binding); valid values: SELF COMMUNITY-HEALTH-WORKER PRIMARY-HEALTH-FACILITY COUNTY-HOSPITAL NATIONAL-REFERRAL-HOSPITAL PRIVATE-FACILITY NGO SCREENING-PROGRAMME OTHER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-referral-service-request"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-referral-service-request"
 * status = #active
 * intent = #order
 * category = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
@@ -427,7 +428,7 @@ InstanceOf: OncologyCoverageEligibilityRequest
 Title: "OncologyCoverageEligibilityRequest – INVALID: item.productOrService 'WRONG-INT' not in SHAInterventionsVS"
 Description: "INVALID OncologyCoverageEligibilityRequest. Violations: item.productOrService 'WRONG-INT' from http://example.com/wrong-system is not in SHAInterventionsVS (required binding); valid values: SHA-CHEMO-NEO-ADJUVANT SHA-CHEMO-PALLIATIVE SHA-RT-RADICAL SHA-RT-ADJUVANT SHA-SURGERY-CURATIVE and others from SHAInterventionsCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-coverage-eligibility-request"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-coverage-eligibility-request"
 * status = #active
 * purpose[0] = #auth-requirements
 * patient = Reference(Patient/example-patient)
@@ -443,7 +444,7 @@ InstanceOf: OncologyClaim
 Title: "OncologyClaim – INVALID: carcinomaStaging 'WRONG-STAGE' not in CancerStageSummaryVS"
 Description: "INVALID OncologyClaim. Violations: extension:carcinomaStaging valueCode 'WRONG-STAGE' from http://example.com/wrong-system is not in CancerStageSummaryVS (required binding); SHA uses this to determine benefit tier. Valid values: STAGE-1 STAGE-2 STAGE-3 STAGE-4."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-claim"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-claim"
 * status = #active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#professional "Professional"
 * use = #preauthorization
@@ -476,7 +477,7 @@ InstanceOf: OncologyClaimResponse
 Title: "OncologyClaimResponse – INVALID: outcome 'WRONG-OUTCOME' not in remittance-outcome ValueSet"
 Description: "INVALID OncologyClaimResponse. Violations: outcome 'WRONG-OUTCOME' from http://example.com/wrong-system is not in remittance-outcome (http://hl7.org/fhir/ValueSet/remittance-outcome, required binding); valid values: queued partial complete error."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-claim-response"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-claim-response"
 * status = #active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#professional "Professional"
 * use = #preauthorization
@@ -494,7 +495,7 @@ InstanceOf: CTCAEAdverseEventObservation
 Title: "CTCAEAdverseEventObservation – INVALID: ctcaeAttribution 'WRONG-ATTR' not in CTCAEAttributionVS"
 Description: "INVALID CTCAEAdverseEventObservation. Violations: extension:ctcaeAttribution valueCode 'WRONG-ATTR' from http://example.com/wrong-system is not in CTCAEAttributionVS (required binding); valid values: UNRELATED UNLIKELY POSSIBLE PROBABLE DEFINITE."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-ctcae-adverse-event-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-ctcae-adverse-event-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#exam "Exam"
 * code = CTCAETermsCS#VOMITING "Vomiting"
@@ -511,7 +512,7 @@ InstanceOf: OncologyAdverseEvent
 Title: "OncologyAdverseEvent – INVALID: outcome 'WRONG-OUTCOME' not in CTCAEOutcomeVS"
 Description: "INVALID OncologyAdverseEvent. Violations: outcome 'WRONG-OUTCOME' from http://example.com/wrong-system is not in CTCAEOutcomeVS (required binding); valid values: RECOVERED RECOVERING NOT-RECOVERED RECOVERED-WITH-SEQUELAE FATAL OUTCOME-UNKNOWN."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-adverse-event"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-adverse-event"
 * actuality = #actual
 * category[0] = AdverseEventCategoryCS#MEDICATION-MISHAP "Medication Mishap"
 * event = CTCAETermsCS#NEUTROPENIA "Neutropenia"
@@ -530,7 +531,7 @@ InstanceOf: RECISTBaselineObservation
 Title: "RECISTBaselineObservation – INVALID: recistTimepoint 'WRONG-TP' not in RECISTTimepointVS"
 Description: "INVALID RECISTBaselineObservation. Violations: extension:recistTimepoint valueCode 'WRONG-TP' from http://example.com/wrong-system is not in RECISTTimepointVS (required binding); valid values: BASELINE WEEK-4 WEEK-8 WEEK-12 WEEK-16 END-OF-TREATMENT FOLLOW-UP-3M FOLLOW-UP-6M FOLLOW-UP-12M PROGRESSION OTHER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-baseline-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-baseline-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#imaging "Imaging"
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
@@ -549,7 +550,7 @@ InstanceOf: RECISTTargetLesionObservation
 Title: "RECISTTargetLesionObservation – INVALID: bodySite 'WRONG-SITE' not in CancerPrimarySiteVS"
 Description: "INVALID RECISTTargetLesionObservation. Violations: bodySite 'WRONG-SITE' from http://example.com/wrong-system is not in CancerPrimarySiteVS (required binding); valid values: BREAST CERVIX-UTERI PROSTATE LUNG COLON LIVER and others from CancerPrimarySiteCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-target-lesion-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-target-lesion-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#imaging "Imaging"
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
@@ -569,7 +570,7 @@ InstanceOf: RECISTNonTargetLesionObservation
 Title: "RECISTNonTargetLesionObservation – INVALID: bodySite 'WRONG-SITE' not in CancerPrimarySiteVS"
 Description: "INVALID RECISTNonTargetLesionObservation. Violations: bodySite 'WRONG-SITE' from http://example.com/wrong-system is not in CancerPrimarySiteVS (required binding); valid values: BREAST CERVIX-UTERI LIVER LUNG and others from CancerPrimarySiteCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-non-target-lesion-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-non-target-lesion-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
 * subject = Reference(Patient/example-patient)
@@ -584,7 +585,7 @@ InstanceOf: RECISTNewLesionObservation
 Title: "RECISTNewLesionObservation – INVALID: code 'NOT-IN-SHA-VS' not in SHAInterventionsVS"
 Description: "INVALID RECISTNewLesionObservation. Violations: code 'NOT-IN-SHA-VS' from http://example.com/wrong-system is not in SHAInterventionsVS (required binding); valid values include: SHA-IMAGING SHA-ONCOLOGY-CONSULT and others from SHAInterventionsCS."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-new-lesion-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-new-lesion-observation"
 * status = #final
 * code = http://example.com/wrong-system#NOT-IN-SHA-VS "Invalid — not in SHAInterventionsVS"
 * subject = Reference(Patient/example-patient)
@@ -597,7 +598,7 @@ InstanceOf: RECISTResponseAssessmentObservation
 Title: "RECISTResponseAssessmentObservation – INVALID: valueCodeableConcept 'WRONG-RESP' not in RECISTResponseVS"
 Description: "INVALID RECISTResponseAssessmentObservation. Violations: valueCodeableConcept 'WRONG-RESP' from http://example.com/wrong-system is not in RECISTResponseVS (required binding); valid values: COMPLETE-RESPONSE PARTIAL-RESPONSE STABLE-DISEASE PROGRESSIVE-DISEASE NOT-EVALUABLE."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-recist-response-assessment-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-response-assessment-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
 * subject = Reference(Patient/example-patient)
@@ -614,7 +615,7 @@ InstanceOf: RadiotherapyServiceRequest
 Title: "RadiotherapyServiceRequest – INVALID: rtTreatmentTechnique 'WRONG-TECH' not in RTTreatmentTechniqueVS"
 Description: "INVALID RadiotherapyServiceRequest. Violations: extension:rtTreatmentTechnique valueCode 'WRONG-TECH' from http://example.com/wrong-system is not in RTTreatmentTechniqueVS (required binding); valid values: TWO-D-RT THREE-D-CRT IMRT VMAT SBRT SRS PROTON-THERAPY BRACHYTHERAPY-HDR BRACHYTHERAPY-LDR ELECTRON-THERAPY TOTAL-BODY-IRRAD OTHER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-service-request"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-service-request"
 * status = #active
 * intent = #order
 * category[0] = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
@@ -633,8 +634,8 @@ InstanceOf: RadiotherapyPlanDefinition
 Title: "RadiotherapyPlanDefinition – INVALID: rtTreatmentTechnique 'WRONG-TECH' not in RTTreatmentTechniqueVS"
 Description: "INVALID RadiotherapyPlanDefinition. Violations: extension:rtTreatmentTechnique valueCode 'WRONG-TECH' from http://example.com/wrong-system is not in RTTreatmentTechniqueVS (required binding); valid values: TWO-D-RT THREE-D-CRT IMRT VMAT SBRT SRS PROTON-THERAPY BRACHYTHERAPY-HDR BRACHYTHERAPY-LDR ELECTRON-THERAPY TOTAL-BODY-IRRAD OTHER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-plan-definition"
-* url = "https://fhir.dha.go.ke/nccp/PlanDefinition/invalid-rt-protocol"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-plan-definition"
+* url = "https://nshr-uat.sha.go.ke/fhir/PlanDefinition/invalid-rt-protocol"
 * title = "Invalid RT Protocol — wrong treatment technique code"
 * status = #active
 * type = PlanDefinitionTypeCS#RADIOTHERAPY-PROTOCOL "Radiotherapy Protocol"
@@ -651,7 +652,7 @@ InstanceOf: RadiotherapyTreatmentProcedure
 Title: "RadiotherapyTreatmentProcedure – INVALID: rtBeamType 'WRONG-BEAM' not in RTBeamTypeVS"
 Description: "INVALID RadiotherapyTreatmentProcedure. Violations: extension:rtBeamType valueCode 'WRONG-BEAM' from http://example.com/wrong-system is not in RTBeamTypeVS (required binding); valid values: PHOTON-X-RAY ELECTRON PROTON NEUTRON CARBON-ION COBALT-60 BRACHY-HDR-IR192 BRACHY-LDR-PD103 BRACHY-LDR-I125 BRACHY-HDR-OTHER."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-treatment-procedure"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-treatment-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
 * code = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
@@ -680,7 +681,7 @@ InstanceOf: RadiotherapyDoseObservation
 Title: "RadiotherapyDoseObservation – INVALID: rtTargetVolume 'WRONG-VOL' not in RTTargetVolumeVS"
 Description: "INVALID RadiotherapyDoseObservation. Violations: extension:rtTargetVolume valueCode 'WRONG-VOL' from http://example.com/wrong-system is not in RTTargetVolumeVS (required binding); valid values: GTV CTV ITV PTV OAR PRV RVR BOOST."
 Usage: #example
-* meta.profile = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-radiotherapy-dose-observation"
+* meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-dose-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
 * subject = Reference(Patient/example-patient)
@@ -698,3 +699,5 @@ Usage: #example
 * component[totalFractions].code = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
 * component[totalFractions].valueInteger = 25
 * extension[rtTargetVolume][0].valueCode = http://example.com/wrong-system#WRONG-VOL
+
+*/
