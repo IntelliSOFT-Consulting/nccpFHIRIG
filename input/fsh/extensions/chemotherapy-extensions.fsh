@@ -1,109 +1,157 @@
 Extension: TreatmentIntentExtension
-Id: treatment-intent-extension
+Id: nccp-treatment-intent-extension
 Title: "Treatment Intent Extension"
 Description: "The intended treatment goal (curative, palliative, etc.)"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/treatment-intent-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-treatment-intent-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan"
+* ^context[1].type = #element
+* ^context[1].expression = "PlanDefinition"
+* ^context[2].type = #element
+* ^context[2].expression = "MedicationRequest"
 * value[x] only code
 * valueCode from $VS_TREATMENT_INTENT (required)
 
 Extension: PlannedCyclesExtension
-Id: planned-cycles-extension
+Id: nccp-planned-cycles-extension
 Title: "Planned Cycles Extension"
 Description: "Number of planned treatment cycles"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/planned-cycles-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-planned-cycles-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan"
+* ^context[1].type = #element
+* ^context[1].expression = "PlanDefinition"
 * value[x] only integer
 
 Extension: CycleLengthDaysExtension
-Id: cycle-length-days-extension
+Id: nccp-cycle-length-days-extension
 Title: "Cycle Length Days Extension"
 Description: "Length of each treatment cycle in days"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/cycle-length-days-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cycle-length-days-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan"
+* ^context[1].type = #element
+* ^context[1].expression = "PlanDefinition"
 * value[x] only integer
 
 Extension: SessionsPerCycleExtension
-Id: sessions-per-cycle-extension
+Id: nccp-sessions-per-cycle-extension
 Title: "Sessions Per Cycle Extension"
 Description: "Number of sessions per treatment cycle"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/sessions-per-cycle-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-sessions-per-cycle-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan"
+* ^context[1].type = #element
+* ^context[1].expression = "RequestGroup"
 * value[x] only integer
 
 Extension: RegimenCodeExtension
-Id: regimen-code-extension
+Id: nccp-regimen-code-extension
 Title: "Regimen Code Extension"
 Description: "Code identifying the treatment regimen from Livia"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/regimen-code-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-regimen-code-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "CarePlan"
 * value[x] only Coding
 * valueCoding from $VS_TREATMENT_COURSE_CODES (required)
 
 Extension: CycleNumberExtension
-Id: cycle-number-extension
+Id: nccp-cycle-number-extension
 Title: "Cycle Number Extension"
 Description: "Treatment cycle number"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/cycle-number-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cycle-number-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "RequestGroup"
+* ^context[1].type = #element
+* ^context[1].expression = "Encounter"
+* ^context[2].type = #element
+* ^context[2].expression = "MedicationRequest"
+* ^context[3].type = #element
+* ^context[3].expression = "MedicationAdministration"
+* ^context[4].type = #element
+* ^context[4].expression = "Claim"
 * value[x] only integer
 
 Extension: CycleDayStartExtension
-Id: cycle-day-start-extension
+Id: nccp-cycle-day-start-extension
 Title: "Cycle Day Start Extension"
 Description: "First day of cycle on which medication is given"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/cycle-day-start-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cycle-day-start-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only integer
 
 Extension: CycleDayEndExtension
-Id: cycle-day-end-extension
+Id: nccp-cycle-day-end-extension
 Title: "Cycle Day End Extension"
 Description: "Last day of cycle on which medication is given"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/cycle-day-end-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cycle-day-end-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only integer
 
 Extension: AppliesFromCycleExtension
-Id: applies-from-cycle-extension
+Id: nccp-applies-from-cycle-extension
 Title: "Applies From Cycle Extension"
 Description: "Cycle number from which this medication applies"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/applies-from-cycle-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-applies-from-cycle-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only integer
 
 Extension: AppliesToCycleExtension
-Id: applies-to-cycle-extension
+Id: nccp-applies-to-cycle-extension
 Title: "Applies To Cycle Extension"
 Description: "Cycle number up to which this medication applies"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/applies-to-cycle-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-applies-to-cycle-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only integer
 
 Extension: ClinicalCategoryExtension
-Id: clinical-category-extension
+Id: nccp-clinical-category-extension
 Title: "Clinical Category Extension"
 Description: "Clinical category of the medication in the regimen"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/clinical-category-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-clinical-category-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only code
 * valueCode from $VS_MED_CLINICAL_CATEGORY (required)
 
 Extension: BSABasedDoseExtension
-Id: bsa-based-dose-extension
+Id: nccp-bsa-based-dose-extension
 Title: "BSA Based Dose Extension"
 Description: "Indicates if dose is calculated based on body surface area"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/bsa-based-dose-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-bsa-based-dose-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only boolean
 
 Extension: DosePerUnitExtension
-Id: dose-per-unit-extension
+Id: nccp-dose-per-unit-extension
 Title: "Dose Per Unit Extension"
 Description: "Dose per unit (e.g., mg/m2 or mg/kg)"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/dose-per-unit-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-dose-per-unit-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "MedicationRequest"
 * value[x] only Quantity
 
 Extension: BSAFormulaExtension
-Id: bsa-formula-extension
+Id: nccp-bsa-formula-extension
 Title: "BSA Formula Extension"
 Description: "Formula used to calculate body surface area"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/bsa-formula-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-bsa-formula-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "Observation"
 * value[x] only code
 * valueCode from BSAFormulaVS (required)
 
 Extension: ProtocolMarkersExtension
-Id: protocol-markers-extension
+Id: nccp-protocol-markers-extension
 Title: "Protocol Markers Extension"
 Description: "OCM protocol markers for diagnostic ordering"
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/protocol-markers-extension"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-protocol-markers-extension"
+* ^context[0].type = #element
+* ^context[0].expression = "ServiceRequest"
 * value[x] only Coding
 * valueCoding from $VS_OCM_PROTOCOL_MARKERS (required)

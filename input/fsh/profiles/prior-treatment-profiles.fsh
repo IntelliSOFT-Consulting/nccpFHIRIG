@@ -5,15 +5,14 @@
 // ---- PROFILE 17: PriorSurgeryProcedure ----
 Profile: PriorSurgeryProcedure
 Parent: Procedure
-Id: ke-nccp-prior-surgery-procedure
+Id: nccp-prior-surgery-procedure
 Title: "NCCP Prior Surgery Procedure"
 Description: "Documents prior surgical procedures relevant to the patient's cancer history."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-surgery-procedure"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-surgery-procedure"
 * ^status = #draft
 
 * meta.profile 1..* MS
 * status 1..1 MS
-* status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
@@ -29,15 +28,14 @@ Description: "Documents prior surgical procedures relevant to the patient's canc
 // ---- PROFILE 18: PriorRadiotherapyProcedure ----
 Profile: PriorRadiotherapyProcedure
 Parent: Procedure
-Id: ke-nccp-prior-radiotherapy-procedure
+Id: nccp-prior-radiotherapy-procedure
 Title: "NCCP Prior Radiotherapy Procedure"
 Description: "Documents prior radiotherapy treatment relevant to the patient's cancer history."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-radiotherapy-procedure"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-radiotherapy-procedure"
 * ^status = #draft
 
 * meta.profile 1..* MS
 * status 1..1 MS
-* status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
@@ -53,15 +51,14 @@ Description: "Documents prior radiotherapy treatment relevant to the patient's c
 // ---- PROFILE 19: PriorBMTProcedure ----
 Profile: PriorBMTProcedure
 Parent: Procedure
-Id: ke-nccp-prior-bmt-procedure
+Id: nccp-prior-bmt-procedure
 Title: "NCCP Prior Bone Marrow Transplant Procedure"
 Description: "Documents prior bone marrow transplant relevant to the patient's haematological cancer history."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-bmt-procedure"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-bmt-procedure"
 * ^status = #draft
 
 * meta.profile 1..* MS
 * status 1..1 MS
-* status from http://hl7.org/fhir/ValueSet/procedure-status (required)
 * category 1..1 MS
 * category from $VS_SHA_INTERVENTIONS (required)
 * code 1..1 MS
@@ -77,10 +74,10 @@ Description: "Documents prior bone marrow transplant relevant to the patient's h
 // ---- PROFILE 20: PriorSystemicTherapyStatement ----
 Profile: PriorSystemicTherapyStatement
 Parent: MedicationStatement
-Id: ke-nccp-prior-systemic-therapy-statement
+Id: nccp-prior-systemic-therapy-statement
 Title: "NCCP Prior Systemic Therapy Statement"
 Description: "Documents prior systemic therapy (chemotherapy, immunotherapy, hormonal) relevant to the patient's cancer history."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-prior-systemic-therapy-statement"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-systemic-therapy-statement"
 * ^status = #draft
 
 * meta.profile 1..* MS

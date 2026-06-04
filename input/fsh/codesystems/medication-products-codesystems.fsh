@@ -8,8 +8,9 @@ CodeSystem: GenericProductsCS
 Id: generic-products-cs
 Title: "Kenya Generic Oncology Products Code System"
 Description: "Generic names of chemotherapy agents and oncology medications used in Kenya."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/generic-products-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/generic-products-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 // Alkylating agents
 * #CYCLOPHOSPHAMIDE    "Cyclophosphamide"
@@ -85,8 +86,9 @@ CodeSystem: UnitOfMeasureCS
 Id: unit-of-measure-cs
 Title: "Kenya Oncology Unit of Measure Code System"
 Description: "Units of measure for oncology drug dosing and administration quantities."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/unit-of-measure-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/unit-of-measure-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #MG              "mg"                "Milligrams"
 * #G               "g"                 "Grams"
@@ -110,8 +112,9 @@ CodeSystem: MedAdminRouteCS
 Id: med-admin-route-cs
 Title: "Kenya Medication Administration Route Code System"
 Description: "Codes for the route by which oncology medications are administered."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/med-admin-route-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/med-admin-route-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #IV-BOLUS         "Intravenous Bolus"            "Direct IV injection over <5 minutes."
 * #IV-PUSH          "Intravenous Push"             "IV injection over 5–15 minutes."
@@ -136,8 +139,9 @@ CodeSystem: SHAInterventionsCS
 Id: sha-interventions-cs
 Title: "Kenya SHA Oncology Interventions Code System"
 Description: "Social Health Authority (SHA) benefit package codes for oncology interventions."
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/sha-interventions-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/sha-interventions-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #SHA-CHEMO-FIRST-LINE   "SHA: Chemotherapy — First Line"       "First-line chemotherapy regimen."
 * #SHA-CHEMO-SECOND-LINE  "SHA: Chemotherapy — Second Line"      "Second-line or salvage chemotherapy."
@@ -161,4 +165,11 @@ Description: "Social Health Authority (SHA) benefit package codes for oncology i
 * #SHA-IMAGING            "SHA: Oncology Diagnostic Imaging"     "CT, MRI, PET-CT for staging or response."
 * #SHA-ONCOLOGY-CONSULT   "SHA: Oncology Consultation"           "Specialist oncology consultation."
 * #SHA-MDT                "SHA: MDT Meeting"                     "Multidisciplinary tumour board review."
-* #SHA-PATHOLOGY          "SHA: Pathology / Histopathology"      "Histopathology, IHC, or molecular diagnostics."
+* #SHA-PATHOLOGY              "SHA: Pathology / Histopathology"          "Histopathology, IHC, or molecular diagnostics."
+* #SHA-RT-DOSE-PER-FRACTION   "SHA: RT Dose Per Fraction"                "Radiation dose delivered per fraction (Gy)."
+* #SHA-RT-TOTAL-FRACTIONS     "SHA: RT Total Fractions Delivered"        "Total number of radiation fractions delivered."
+* #SHA-SUSPECTED-CANCER-TYPE  "SHA: Suspected Cancer Type"               "Type of cancer suspected at screening/referral."
+* #SHA-SUSPICION-LEVEL        "SHA: Cancer Suspicion Level"              "Clinical level of suspicion for malignancy."
+* #SHA-REASON-FOR-SUSPICION   "SHA: Reason for Suspicion"                "Reason underpinning the cancer suspicion."
+* #SHA-PRESENTING-SYMPTOMS    "SHA: Presenting Symptoms"                 "Symptoms presented by the patient."
+* #SHA-DIAGNOSTIC-WORKUP      "SHA: Planned Diagnostic Workup"           "Diagnostic investigations planned for confirmation."

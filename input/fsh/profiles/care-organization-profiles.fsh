@@ -5,10 +5,10 @@
 // ---- PROFILE 6: OncologyCareTeam ----
 Profile: OncologyCareTeam
 Parent: CareTeam
-Id: ke-nccp-oncology-care-team
+Id: nccp-oncology-care-team
 Title: "NCCP Oncology Care Team"
 Description: "The multidisciplinary oncology care team responsible for the patient's cancer management."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-care-team"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-care-team"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -32,10 +32,10 @@ Description: "The multidisciplinary oncology care team responsible for the patie
 // ---- PROFILE 7: OncologyPlanDefinition ----
 Profile: OncologyPlanDefinition
 Parent: PlanDefinition
-Id: ke-nccp-oncology-plan-definition
+Id: nccp-oncology-plan-definition
 Title: "NCCP Oncology Plan Definition"
 Description: "Template for an oncology treatment regimen (e.g., AC-T, FOLFOX) used to instantiate care plans."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-plan-definition"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-plan-definition"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -60,10 +60,10 @@ Description: "Template for an oncology treatment regimen (e.g., AC-T, FOLFOX) us
 // ---- PROFILE 8: OncologyRequestGroup ----
 Profile: OncologyRequestGroup
 Parent: RequestGroup
-Id: ke-nccp-oncology-request-group
+Id: nccp-oncology-request-group
 Title: "NCCP Oncology Request Group"
 Description: "Groups all medication requests for a single chemotherapy cycle session."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-request-group"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-request-group"
 * ^status = #draft
 
 * meta.profile 1..* MS

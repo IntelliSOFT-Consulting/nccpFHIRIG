@@ -2,8 +2,9 @@ CodeSystem: CarePlanCategoryCS
 Id: care-plan-category-cs
 Title: "Kenya Care Plan Category Code System"
 Description: "Care plan categories from MOH-KENYA KNHTS (CARE-PLAN-CATEGORY)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/care-plan-category-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/care-plan-category-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #FOLLOW-UP "Follow Up"
 * #IMMUNIZATION "Immunization"
@@ -30,8 +31,9 @@ CodeSystem: ProcedureCodeCS
 Id: procedure-code-cs
 Title: "Kenya Procedure Code Code System"
 Description: "Procedure codes from MOH-KENYA KNHTS (PROCEDURE-CODE)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/procedure-code-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/procedure-code-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #RADIOTHERAPY "Radiotherapy"
 * #COUNSELLING "Counselling"
@@ -58,8 +60,9 @@ CodeSystem: ManifestationOrSymptomCS
 Id: manifestation-or-symptom-cs
 Title: "Kenya Manifestation Or Symptom Code System"
 Description: "Manifestation/symptom codes from MOH-KENYA KNHTS (MANIFESTATION-OR-SYMPTOM)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/manifestation-or-symptom-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/manifestation-or-symptom-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #FEVER "Fever"
 * #COUGH "Cough"
@@ -96,8 +99,9 @@ CodeSystem: EpisodeOfCareStatusCS
 Id: episode-of-care-status-cs
 Title: "Kenya Episode of Care Status Code System"
 Description: "Episode of care status codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/episode-of-care-status-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/episode-of-care-status-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #ACTIVE "Active"
 
@@ -105,8 +109,9 @@ CodeSystem: EpisodeOfCareTypeCS
 Id: episode-of-care-type-cs
 Title: "Kenya Episode of Care Type Code System"
 Description: "Episode of care type codes from MOH-KENYA KNHTS"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/episode-of-care-type-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/episode-of-care-type-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #CANCER-CARE-PROGRAM "Cancer Care Program"
 * #MATERNAL-AND-CHILD-HEALTH-PROGRAM "Maternal And Child Health Program"
@@ -132,8 +137,9 @@ CodeSystem: OncologyEncounterTypeCS
 Id: oncology-encounter-type-cs
 Title: "Kenya Oncology Encounter Type Code System"
 Description: "Oncology encounter type codes from MOH-KENYA KNHTS (ONCOLOGY-ENCOUNTER-TYPE)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/oncology-encounter-type-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/oncology-encounter-type-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #TREATMENT-ENCOUNTER "Treatment Encounter"
 * #DIAGNOSTIC-ENCOUNTER "Diagnostic Encounter"
@@ -145,8 +151,9 @@ CodeSystem: CareTeamCategoryCS
 Id: care-team-category-cs
 Title: "Kenya Care Team Category Code System"
 Description: "Care team category codes from MOH-KENYA KNHTS (CARE-TEAM-CATEGORY)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/care-team-category-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/care-team-category-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #ENCOUNTER-CARE-TEAM "Encounter Care Team"
 * #EPISODE-CARE-TEAM "Episode Care Team"
@@ -157,8 +164,9 @@ CodeSystem: PlanDefinitionTypeCS
 Id: plan-definition-type-cs
 Title: "Kenya Plan Definition Type Code System"
 Description: "Plan definition type codes from MOH-KENYA KNHTS (PLAN-DEFINITION-TYPE)"
-* ^url = "https://fhir.dha.go.ke/nccp/CodeSystem/plan-definition-type-cs"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/plan-definition-type-cs"
 * ^status = #active
+* ^experimental = false
 * ^caseSensitive = true
 * #REGIMEN-TEMPLATE "Regimen Template"
 * #RADIOTHERAPY-PROTOCOL "Radiotherapy Protocol"

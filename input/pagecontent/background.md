@@ -90,3 +90,9 @@ This IG aligns with and references the following international standards:
 - **ICD-O-3** — International Classification of Diseases for Oncology, 3rd Edition (morphology)
 - **ICD-10** — WHO International Classification of Diseases (diagnosis codes)
 - **CTCAE v5.0** — Common Terminology Criteria for Adverse Events (toxicity grading)
+
+---
+
+{% include dependency-table.xhtml %}
+
+{% include cross-version-analysis.xhtml %}

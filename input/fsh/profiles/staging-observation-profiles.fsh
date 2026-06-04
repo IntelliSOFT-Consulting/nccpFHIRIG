@@ -5,10 +5,10 @@
 // ---- PROFILE 11: TNMStagingObservation ----
 Profile: TNMStagingObservation
 Parent: Observation
-Id: ke-nccp-tnm-staging-observation
+Id: nccp-tnm-staging-observation
 Title: "NCCP TNM Staging Observation"
 Description: "Records TNM staging components (T, N, M) and overall stage for an oncology diagnosis."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-tnm-staging-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-tnm-staging-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -40,32 +40,32 @@ Description: "Records TNM staging components (T, N, M) and overall stage for an 
     grade 0..1 MS and
     laterality 0..1 MS
 * component[clinicalT].code 1..1 MS
-* component[clinicalT].code from CancerStageTypeVS (required)
+* component[clinicalT].code = CancerStageTypeCS#CLINICAL-T
 * component[clinicalT].value[x] only CodeableConcept
 * component[clinicalT].valueCodeableConcept 1..1 MS
 * component[clinicalT].valueCodeableConcept from ClinicalTVS (required)
 * component[clinicalN].code 1..1 MS
-* component[clinicalN].code from CancerStageTypeVS (required)
+* component[clinicalN].code = CancerStageTypeCS#CLINICAL-N
 * component[clinicalN].value[x] only CodeableConcept
 * component[clinicalN].valueCodeableConcept 1..1 MS
 * component[clinicalN].valueCodeableConcept from ClinicalNVS (required)
 * component[clinicalM].code 1..1 MS
-* component[clinicalM].code from CancerStageTypeVS (required)
+* component[clinicalM].code = CancerStageTypeCS#CLINICAL-M
 * component[clinicalM].value[x] only CodeableConcept
 * component[clinicalM].valueCodeableConcept 1..1 MS
 * component[clinicalM].valueCodeableConcept from ClinicalMVS (required)
 * component[overallStage].code 1..1 MS
-* component[overallStage].code from CancerStageTypeVS (required)
+* component[overallStage].code = CancerStageTypeCS#OVERALL-STAGE
 * component[overallStage].value[x] only CodeableConcept
 * component[overallStage].valueCodeableConcept 1..1 MS
 * component[overallStage].valueCodeableConcept from CancerStageSummaryVS (required)
 * component[grade].code 1..1 MS
-* component[grade].code from CancerStageTypeVS (required)
+* component[grade].code = CancerStageTypeCS#TUMOUR-GRADE
 * component[grade].value[x] only CodeableConcept
 * component[grade].valueCodeableConcept 1..1 MS
 * component[grade].valueCodeableConcept from $VS_CANCER_GRADE (required)
 * component[laterality].code 1..1 MS
-* component[laterality].code from CancerStageTypeVS (required)
+* component[laterality].code = CancerStageTypeCS#TNM-LATERALITY
 * component[laterality].value[x] only CodeableConcept
 * component[laterality].valueCodeableConcept 1..1 MS
 * component[laterality].valueCodeableConcept from $VS_LATERALITY_CODES (required)
@@ -73,10 +73,10 @@ Description: "Records TNM staging components (T, N, M) and overall stage for an 
 // ---- PROFILE 12: PerformanceStatusObservation ----
 Profile: PerformanceStatusObservation
 Parent: Observation
-Id: ke-nccp-performance-status-observation
+Id: nccp-performance-status-observation
 Title: "NCCP ECOG Performance Status Observation"
 Description: "Records ECOG performance status at a given encounter to support treatment decisions."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-performance-status-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-performance-status-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -104,10 +104,10 @@ Description: "Records ECOG performance status at a given encounter to support tr
 // ---- PROFILE 13: BodySurfaceAreaObservation ----
 Profile: BodySurfaceAreaObservation
 Parent: Observation
-Id: ke-nccp-body-surface-area-observation
+Id: nccp-body-surface-area-observation
 Title: "NCCP Body Surface Area Observation"
 Description: "Records calculated body surface area used for BSA-based chemotherapy dosing."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-body-surface-area-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-body-surface-area-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS

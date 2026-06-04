@@ -5,10 +5,10 @@
 // ---- PROFILE 2: OncologyDiagnosisCondition ----
 Profile: OncologyDiagnosisCondition
 Parent: Condition
-Id: ke-nccp-oncology-diagnosis-condition
+Id: nccp-oncology-diagnosis-condition
 Title: "NCCP Oncology Diagnosis Condition"
 Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 post-coordinated coding for the NCCP."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-oncology-diagnosis-condition"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnosis-condition"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -33,6 +33,14 @@ Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 
     diseaseExtent 0..1 MS and
     histopathology 0..1 MS and
     manifestation 0..1 MS
+* code.coding[stem].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/condition-codes-cs"
+* code.coding[histopathology].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/morphology-codes-cs"
+* code.coding[specificAnatomy].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-anatomy-cs"
+* code.coding[laterality].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/laterality-codes-cs"
+* code.coding[severityAxis].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/icd11-severity-cs"
+* code.coding[grade].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/cancer-grade-cs"
+* code.coding[diseaseExtent].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/disease-extent-codes-cs"
+* code.coding[manifestation].system = "https://nshr-uat.sha.go.ke/fhir/CodeSystem/manifestation-codes-cs"
 * code.coding[specificAnatomy] from $VS_ICD11_ANATOMY (required)
 * code.coding[laterality] from $VS_LATERALITY_CODES (required)
 * code.coding[severityAxis] from $VS_ICD11_SEVERITY (required)
@@ -72,10 +80,10 @@ Description: "Represents a confirmed or suspected cancer diagnosis using ICD-11 
 // ---- PROFILE 3: MorphologyObservation ----
 Profile: MorphologyObservation
 Parent: Observation
-Id: ke-nccp-morphology-observation
+Id: nccp-morphology-observation
 Title: "NCCP Morphology Observation"
 Description: "Records histopathological morphology findings for an oncology diagnosis, including tissue type and biopsy method."
-* ^url = "https://fhir.dha.go.ke/nccp/StructureDefinition/ke-nccp-morphology-observation"
+* ^url = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-morphology-observation"
 * ^status = #draft
 
 * meta.profile 1..* MS
@@ -85,7 +93,7 @@ Description: "Records histopathological morphology findings for an oncology diag
 * category 1..* MS
 * category from http://hl7.org/fhir/ValueSet/observation-category (required)
 * code 1..1 MS
-* code from http://hl7.org/fhir/ValueSet/observation-codes (required)
+* code from $VS_SHA_INTERVENTIONS (required)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..* MS
