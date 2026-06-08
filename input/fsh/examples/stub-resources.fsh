@@ -10,6 +10,8 @@ InstanceOf: Patient
 Title: "Example Patient (Stub)"
 Description: "Placeholder patient used as a reference target in example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder patient used as a reference target in example instances.</p></div>"
 * id = "example-patient"
 * name[0].family = "Wanjiku"
 * name[0].given[0] = "Mary"
@@ -23,6 +25,8 @@ InstanceOf: Practitioner
 Title: "Example Practitioner (Stub)"
 Description: "Placeholder practitioner (oncologist) used as a reference target in example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder practitioner (oncologist) used as a reference target in example instances.</p></div>"
 * id = "example-practitioner"
 * name[0].family = "Otieno"
 * name[0].given[0] = "James"
@@ -35,6 +39,8 @@ InstanceOf: Practitioner
 Title: "Example Radiation Therapist (Stub)"
 Description: "Placeholder radiation therapist used as a reference target in radiotherapy examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder radiation therapist used as a reference target in radiotherapy examples.</p></div>"
 * id = "example-radiation-therapist"
 * name[0].family = "Mwangi"
 * name[0].given[0] = "Faith"
@@ -46,6 +52,8 @@ InstanceOf: Organization
 Title: "Example Organization (Stub)"
 Description: "Placeholder oncology unit organisation used as a reference target in example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder oncology unit organisation used as a reference target in example instances.</p></div>"
 * id = "example-organization"
 * name = "Kenyatta National Hospital — Oncology Unit"
 * type[0] = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
@@ -57,6 +65,8 @@ InstanceOf: Organization
 Title: "SHA Kenya (Stub)"
 Description: "Placeholder Social Health Authority insurer used as a reference target in financial examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder Social Health Authority insurer used as a reference target in financial examples.</p></div>"
 * id = "sha-kenya"
 * name = "Social Health Authority — Kenya"
 * type[0] = http://terminology.hl7.org/CodeSystem/organization-type#ins "Insurance Company"
@@ -68,6 +78,8 @@ InstanceOf: Organization
 Title: "KNH Oncology (Stub)"
 Description: "Placeholder KNH Oncology department used as a reference target in referral examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder KNH Oncology department used as a reference target in referral examples.</p></div>"
 * id = "knh-oncology"
 * name = "KNH Oncology Department"
 * type[0] = http://terminology.hl7.org/CodeSystem/organization-type#dept "Hospital Department"
@@ -79,6 +91,8 @@ InstanceOf: Condition
 Title: "Example Condition (Stub)"
 Description: "Placeholder condition instance used as a reference target in example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder condition instance used as a reference target in example instances.</p></div>"
 * id = "example-condition"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
@@ -92,6 +106,8 @@ InstanceOf: EpisodeOfCare
 Title: "Example Episode of Care (Stub)"
 Description: "Placeholder episode of care used as a reference target in encounter examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder episode of care used as a reference target in encounter examples.</p></div>"
 * id = "example-episode"
 * status = #active
 * type[0] = EpisodeOfCareTypeCS#CANCER-CARE-PROGRAM "Cancer Care Program"
@@ -106,6 +122,8 @@ InstanceOf: Encounter
 Title: "Example Encounter (Stub)"
 Description: "Placeholder encounter used as a reference target in example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder encounter used as a reference target in example instances.</p></div>"
 * id = "example-encounter"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
@@ -125,6 +143,8 @@ InstanceOf: Location
 Title: "Oncology Day Unit (Stub)"
 Description: "Placeholder oncology day unit location used as a reference target in example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder oncology day unit location used as a reference target in example instances.</p></div>"
 * id = "oncology-day-unit"
 * name = "KNH Oncology Day Treatment Unit"
 * status = #active
@@ -136,6 +156,8 @@ InstanceOf: CarePlan
 Title: "Example Care Plan (Stub)"
 Description: "Placeholder care plan used as a reference target in medication and financial example instances."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder care plan used as a reference target in medication and financial example instances.</p></div>"
 * id = "example-careplan"
 * status = #active
 * intent = #plan
@@ -148,6 +170,8 @@ InstanceOf: CarePlan
 Title: "Example RT Care Plan (Stub)"
 Description: "Placeholder radiotherapy care plan used as a reference target in radiotherapy treatment examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder radiotherapy care plan used as a reference target in radiotherapy treatment examples.</p></div>"
 * id = "example-rt-careplan"
 * status = #active
 * intent = #plan
@@ -160,6 +184,8 @@ InstanceOf: CareTeam
 Title: "Example Care Team (Stub)"
 Description: "Placeholder care team used as a reference target in care plan examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder care team used as a reference target in care plan examples.</p></div>"
 * id = "example-care-team"
 * status = #active
 * subject = Reference(Patient/example-patient)
@@ -171,6 +197,8 @@ InstanceOf: Coverage
 Title: "Example Coverage (Stub)"
 Description: "Placeholder SHA insurance coverage used as a reference target in financial examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder SHA insurance coverage used as a reference target in financial examples.</p></div>"
 * id = "example-coverage"
 * status = #active
 * beneficiary = Reference(Patient/example-patient)
@@ -183,6 +211,8 @@ InstanceOf: MedicationRequest
 Title: "Example MedicationRequest — Doxorubicin (Stub)"
 Description: "Placeholder medication request used as a reference target in medication administration examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder medication request used as a reference target in medication administration examples.</p></div>"
 * id = "example-med-request-doxorubicin"
 * status = #active
 * intent = #order
@@ -197,6 +227,8 @@ InstanceOf: MedicationAdministration
 Title: "Example MedicationAdministration (Stub)"
 Description: "Placeholder medication administration used as a reference target in adverse event examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder medication administration used as a reference target in adverse event examples.</p></div>"
 * id = "example-med-admin"
 * status = #completed
 * medicationCodeableConcept = GenericProductsCS#DOXORUBICIN "Doxorubicin"
@@ -218,6 +250,8 @@ InstanceOf: ServiceRequest
 Title: "Example Diagnostic ServiceRequest (Stub)"
 Description: "Placeholder diagnostic service request used as a reference target in diagnostic report examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder diagnostic service request used as a reference target in diagnostic report examples.</p></div>"
 * id = "example-diagnostic-request"
 * status = #completed
 * intent = #order
@@ -231,6 +265,8 @@ InstanceOf: Claim
 Title: "Example Oncology Claim (Stub)"
 Description: "Placeholder claim used as a reference target in claim response examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder claim used as a reference target in claim response examples.</p></div>"
 * id = "example-oncology-claim"
 * status = #active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#professional "Professional"
@@ -260,6 +296,8 @@ InstanceOf: Observation
 Title: "Example Target Lesion Observation (Stub)"
 Description: "Placeholder RECIST target lesion observation used as a reference target in response assessment examples."
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Placeholder RECIST target lesion observation used as a reference target in response assessment examples.</p></div>"
 * id = "example-target-lesion"
 * status = #final
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
