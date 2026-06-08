@@ -11,6 +11,8 @@ InstanceOf: RadiotherapyCarePlan
 Title: "Example Radiotherapy Care Plan — Adjuvant Breast RT"
 Description: "Adjuvant 3DCRT care plan for left breast cancer post-lumpectomy: 25 fractions × 2 Gy (50 Gy total)"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Adjuvant 3DCRT care plan for left breast cancer post-lumpectomy: 25 fractions × 2 Gy (50 Gy total)</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-care-plan"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/rt-careplan-id"
 * identifier[0].value = "RT-CP-2026-00456"
@@ -38,6 +40,8 @@ InstanceOf: MorphologyObservation
 Title: "Example Morphology Observation — Invasive Ductal Carcinoma"
 Description: "Histopathology core-needle biopsy confirming invasive ductal carcinoma of the left breast"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Histopathology core-needle biopsy confirming invasive ductal carcinoma of the left breast</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-morphology-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory "Laboratory"
@@ -56,6 +60,8 @@ InstanceOf: OncologyEpisodeOfCare
 Title: "Example Oncology Episode of Care — Breast Cancer"
 Description: "Active episode of cancer care for a breast cancer patient at Kenyatta National Hospital"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Active episode of cancer care for a breast cancer patient at Kenyatta National Hospital</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-episode-of-care"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/episode-id"
 * identifier[0].value = "EOC-2025-00789"
@@ -72,6 +78,8 @@ InstanceOf: OncologyEncounter
 Title: "Example Oncology Encounter — Chemotherapy Treatment Session"
 Description: "Day-case chemotherapy session at Kenyatta National Hospital oncology unit, cycle 1 session 1"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Day-case chemotherapy session at Kenyatta National Hospital oncology unit, cycle 1 session 1</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-encounter"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/encounter-id"
 * identifier[0].value = "ENC-2026-00231"
@@ -96,6 +104,8 @@ InstanceOf: OncologyCareTeam
 Title: "Example Oncology Care Team — Breast Cancer MDT"
 Description: "Multidisciplinary team managing a breast cancer patient at Kenyatta National Hospital"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Multidisciplinary team managing a breast cancer patient at Kenyatta National Hospital</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-care-team"
 * status = #active
 * category[0] = CareTeamCategoryCS#EPISODE-CARE-TEAM "Episode Care Team"
@@ -111,6 +121,8 @@ InstanceOf: OncologyPlanDefinition
 Title: "Example Oncology Plan Definition — AC-T Regimen Template"
 Description: "Regimen template for AC-T: Doxorubicin + Cyclophosphamide → Paclitaxel, 8 × 21-day cycles"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Regimen template for AC-T: Doxorubicin + Cyclophosphamide → Paclitaxel, 8 × 21-day cycles</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-plan-definition"
 * url = "https://nshr-uat.sha.go.ke/fhir/PlanDefinition/OncologyPlanDefinitionExample"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/regimen-id"
@@ -129,6 +141,8 @@ InstanceOf: OncologyRequestGroup
 Title: "Example Oncology Request Group — Cycle 1 Session 1 (AC)"
 Description: "Groups all medication requests for AC cycle 1 session 1 for breast cancer patient"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Groups all medication requests for AC cycle 1 session 1 for breast cancer patient</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-request-group"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/request-group-id"
 * identifier[0].value = "RG-2026-00101"
@@ -147,6 +161,8 @@ InstanceOf: ChemotherapyMedicationRequest
 Title: "Example Chemotherapy Medication Request — Doxorubicin"
 Description: "Doxorubicin 60 mg/m² IV short infusion, day 1 of cycle 1 for breast cancer (AC regimen)"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Doxorubicin 60 mg/m² IV short infusion, day 1 of cycle 1 for breast cancer (AC regimen)</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-chemotherapy-medication-request"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/med-request-id"
 * identifier[0].value = "MR-2026-00301"
@@ -174,6 +190,8 @@ InstanceOf: OncologyMedicationAdministration
 Title: "Example Medication Administration — Doxorubicin Cycle 1 Day 1"
 Description: "Actual administration of Doxorubicin 105 mg IV (BSA 1.75 m²) on 15 Jan 2026, cycle 1"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Actual administration of Doxorubicin 105 mg IV (BSA 1.75 m²) on 15 Jan 2026, cycle 1</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-medication-administration"
 * status = #completed
 * category = http://terminology.hl7.org/CodeSystem/medication-admin-category#inpatient "Inpatient"
@@ -198,6 +216,8 @@ Title: "Example ECOG Performance Status Observation — ECOG 1"
 Description: "ECOG performance status 1 recorded at cycle 1 pre-treatment assessment; patient ambulatory with mild symptoms"
 Usage: #example
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-performance-status-observation"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>ECOG Performance Status</b>: ECOG 1 (ambulatory, restricted in strenuous activity)</p><p>Recorded 2026-01-10 for Mary Wanjiku at the cycle 1 pre-treatment assessment.</p></div>"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
 * code = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
@@ -213,6 +233,8 @@ InstanceOf: BodySurfaceAreaObservation
 Title: "Example Body Surface Area Observation — 1.75 m²"
 Description: "BSA 1.75 m² calculated by Mosteller formula (height 165 cm, weight 70 kg) pre-cycle 1"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>BSA 1.75 m² calculated by Mosteller formula (height 165 cm, weight 70 kg) pre-cycle 1</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-body-surface-area-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"
@@ -233,6 +255,8 @@ InstanceOf: CancerSuspicionObservation
 Title: "Example Cancer Suspicion Observation — High Suspicion Cervical Cancer"
 Description: "High-level clinical suspicion of cervical cancer at screening visit based on abnormal cytology and clinical finding"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>High-level clinical suspicion of cervical cancer at screening visit based on abnormal cytology and clinical finding</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-cancer-suspicion-observation"
 * status = #preliminary
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#exam "Exam"
@@ -258,6 +282,8 @@ InstanceOf: OncologyDiagnosticServiceRequest
 Title: "Example Diagnostic Service Request — Colposcopy-directed Biopsy"
 Description: "Urgent colposcopy and directed biopsy request for suspected cervical cancer"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Urgent colposcopy and directed biopsy request for suspected cervical cancer</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnostic-service-request"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/service-request-id"
 * identifier[0].value = "SR-DIAG-2025-00112"
@@ -279,6 +305,8 @@ InstanceOf: OncologyDiagnosticReport
 Title: "Example Diagnostic Report — Cervical Biopsy Histopathology"
 Description: "Histopathology report confirming squamous cell carcinoma of the cervix from colposcopy-directed biopsy"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Histopathology report confirming squamous cell carcinoma of the cervix from colposcopy-directed biopsy</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnostic-report"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/v2-0074#SP "Surgical Pathology"
@@ -297,6 +325,8 @@ InstanceOf: PriorSurgeryProcedure
 Title: "Example Prior Surgery Procedure — Left Breast Wide Local Excision"
 Description: "Prior wide local excision (lumpectomy) of left breast for stage IIB invasive ductal carcinoma"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prior wide local excision (lumpectomy) of left breast for stage IIB invasive ductal carcinoma</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-surgery-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-SURGERY-CURATIVE "SHA: Surgery — Curative"
@@ -312,6 +342,8 @@ InstanceOf: PriorRadiotherapyProcedure
 Title: "Example Prior Radiotherapy Procedure — Cervical Cancer RT"
 Description: "Prior concurrent chemoradiotherapy (CCRT) for locally advanced cervical cancer in 2023"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prior concurrent chemoradiotherapy (CCRT) for locally advanced cervical cancer in 2023</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-radiotherapy-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-RT-CONCURRENT-CRT "SHA: Concurrent Chemo-Radiotherapy"
@@ -328,6 +360,8 @@ InstanceOf: PriorBMTProcedure
 Title: "Example Prior BMT Procedure — Autologous Stem Cell Transplant for Myeloma"
 Description: "Prior autologous peripheral blood stem cell transplant after melphalan conditioning for multiple myeloma"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prior autologous peripheral blood stem cell transplant after melphalan conditioning for multiple myeloma</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-bmt-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-BMT-AUTOLOGOUS "SHA: BMT — Autologous"
@@ -343,6 +377,8 @@ InstanceOf: PriorSystemicTherapyStatement
 Title: "Example Prior Systemic Therapy Statement — Tamoxifen Adjuvant Hormonal Therapy"
 Description: "5 years of adjuvant tamoxifen for ER+ breast cancer (2018–2023) prior to current recurrence"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>5 years of adjuvant tamoxifen for ER+ breast cancer (2018–2023) prior to current recurrence</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-prior-systemic-therapy-statement"
 * status = #completed
 * category = MedClinicalCategoryCS#HORMONAL-THERAPY "Hormonal Therapy"
@@ -359,6 +395,8 @@ InstanceOf: OncologyReferralServiceRequest
 Title: "Example Oncology Referral — From County Hospital to National Cancer Centre"
 Description: "Referral of a newly diagnosed breast cancer patient from Machakos County Hospital to KNH Oncology"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Referral of a newly diagnosed breast cancer patient from Machakos County Hospital to KNH Oncology</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-referral-service-request"
 * status = #active
 * intent = #order
@@ -376,6 +414,8 @@ InstanceOf: OncologyCoverageEligibilityRequest
 Title: "Example Coverage Eligibility Request — SHA Chemotherapy Pre-authorisation"
 Description: "Request to verify SHA coverage eligibility for AC-T chemotherapy regimen (breast cancer)"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Request to verify SHA coverage eligibility for AC-T chemotherapy regimen (breast cancer)</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-coverage-eligibility-request"
 * status = #active
 * purpose[0] = #auth-requirements
@@ -393,6 +433,8 @@ InstanceOf: OncologyClaim
 Title: "Example Oncology Claim — AC Chemotherapy Cycle 1 Session 1"
 Description: "SHA insurance claim for Doxorubicin + Cyclophosphamide (AC) cycle 1 session 1 for breast cancer"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>SHA insurance claim for Doxorubicin + Cyclophosphamide (AC) cycle 1 session 1 for breast cancer</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-claim"
 * status = #active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#professional "Professional"
@@ -430,6 +472,8 @@ InstanceOf: OncologyClaimResponse
 Title: "Example Oncology Claim Response — SHA Pre-authorisation Approved"
 Description: "SHA pre-authorisation approval for 6 cycles of AC-T chemotherapy (8 sessions) for breast cancer"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>SHA pre-authorisation approval for 6 cycles of AC-T chemotherapy (8 sessions) for breast cancer</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-claim-response"
 * status = #active
 * type = http://terminology.hl7.org/CodeSystem/claim-type#professional "Professional"
@@ -454,6 +498,8 @@ InstanceOf: CTCAEAdverseEventObservation
 Title: "Example CTCAE Adverse Event Observation — Grade 2 Nausea"
 Description: "CTCAE Grade 2 nausea recorded on cycle 1 day 3 post AC chemotherapy; dose not modified"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CTCAE Grade 2 nausea recorded on cycle 1 day 3 post AC chemotherapy; dose not modified</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-ctcae-adverse-event-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#exam "Exam"
@@ -471,6 +517,8 @@ InstanceOf: OncologyAdverseEvent
 Title: "Example Oncology Adverse Event — Grade 3 Febrile Neutropenia"
 Description: "Grade 3 febrile neutropenia reported day 10 post AC cycle 1; patient hospitalised for IV antibiotics"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Grade 3 febrile neutropenia reported day 10 post AC cycle 1; patient hospitalised for IV antibiotics</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-adverse-event"
 * actuality = #actual
 * category[0] = AdverseEventCategoryCS#MEDICATION-MISHAP "Medication Mishap"
@@ -492,6 +540,8 @@ InstanceOf: RECISTBaselineObservation
 Title: "Example RECIST Baseline Observation — Sum of Target Lesion Diameters"
 Description: "Baseline RECIST measurement: sum of longest diameters of 3 target lesions = 58 mm (breast cancer)"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Baseline RECIST measurement: sum of longest diameters of 3 target lesions = 58 mm (breast cancer)</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-baseline-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#imaging "Imaging"
@@ -512,6 +562,8 @@ InstanceOf: RECISTTargetLesionObservation
 Title: "Example RECIST Target Lesion Observation — Left Axillary Node Week 8"
 Description: "RECIST target lesion measurement of left axillary lymph node at week 8 (after 2 AC cycles): 18 mm"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>RECIST target lesion measurement of left axillary lymph node at week 8 (after 2 AC cycles): 18 mm</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-target-lesion-observation"
 * status = #final
 * category[0] = http://terminology.hl7.org/CodeSystem/observation-category#imaging "Imaging"
@@ -533,6 +585,8 @@ InstanceOf: RECISTNonTargetLesionObservation
 Title: "Example RECIST Non-Target Lesion Observation — Liver Metastasis at Week 8"
 Description: "RECIST non-target lesion assessment: liver lesion present/non-measurable at week 8 assessment"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>RECIST non-target lesion assessment: liver lesion present/non-measurable at week 8 assessment</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-non-target-lesion-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
@@ -549,6 +603,8 @@ InstanceOf: RECISTNewLesionObservation
 Title: "Example RECIST New Lesion Observation — No New Lesions at Week 8"
 Description: "RECIST new lesion check at week 8 assessment: no new lesions identified on CT scan"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>RECIST new lesion check at week 8 assessment: no new lesions identified on CT scan</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-new-lesion-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-IMAGING "SHA: Oncology Diagnostic Imaging"
@@ -563,6 +619,8 @@ InstanceOf: RadiotherapyServiceRequest
 Title: "Example Radiotherapy Service Request — Adjuvant Whole Breast RT"
 Description: "Prescription for adjuvant whole breast radiotherapy following lumpectomy for left breast cancer"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prescription for adjuvant whole breast radiotherapy following lumpectomy for left breast cancer</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-service-request"
 * status = #active
 * intent = #order
@@ -583,6 +641,8 @@ InstanceOf: RadiotherapyPlanDefinition
 Title: "Example Radiotherapy Plan Definition — Whole Breast 3DCRT Protocol"
 Description: "Standard adjuvant whole breast radiotherapy protocol: 50 Gy in 25 fractions using 3D conformal technique"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Standard adjuvant whole breast radiotherapy protocol: 50 Gy in 25 fractions using 3D conformal technique</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-plan-definition"
 * url = "https://nshr-uat.sha.go.ke/fhir/PlanDefinition/RadiotherapyPlanDefinitionExample"
 * title = "Whole Breast RT — 50 Gy / 25 Fractions (3DCRT)"
@@ -601,6 +661,8 @@ InstanceOf: RadiotherapyTreatmentProcedure
 Title: "Example Radiotherapy Treatment Procedure — Fraction 1 of 25"
 Description: "First fraction delivery of adjuvant left breast radiotherapy; 2 Gy delivered, cumulative dose 2 Gy"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>First fraction delivery of adjuvant left breast radiotherapy; 2 Gy delivered, cumulative dose 2 Gy</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-treatment-procedure"
 * status = #completed
 * category = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"
@@ -631,6 +693,8 @@ InstanceOf: RadiotherapyDoseObservation
 Title: "Example Radiotherapy Dose Observation — End-of-Treatment Summary"
 Description: "End-of-treatment dose summary: 50 Gy total dose, 25 fractions × 2 Gy, PTV whole breast"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>End-of-treatment dose summary: 50 Gy total dose, 25 fractions × 2 Gy, PTV whole breast</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-radiotherapy-dose-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-RT-ADJUVANT "SHA: Radiotherapy — Adjuvant"

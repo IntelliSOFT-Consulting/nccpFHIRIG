@@ -7,6 +7,8 @@ InstanceOf: OncologyCareplan
 Title: "Example NCCP Oncology Care Plan (AC-T Chemotherapy)"
 Description: "Example AC-T 21-day chemotherapy care plan for a breast cancer patient"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Example AC-T 21-day chemotherapy care plan for a breast cancer patient</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-careplan"
 * identifier[0].system = "https://nshr-uat.sha.go.ke/fhir/careplan-id"
 * identifier[0].value = "REG-2026-00123"
@@ -32,6 +34,8 @@ InstanceOf: OncologyDiagnosisCondition
 Title: "Example NCCP Oncology Diagnosis — Invasive Ductal Carcinoma"
 Description: "Example diagnosis of breast cancer using ICD-11 coding"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Example diagnosis of breast cancer using ICD-11 coding</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-oncology-diagnosis-condition"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved "Resolved"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
@@ -51,6 +55,8 @@ InstanceOf: TNMStagingObservation
 Title: "Example TNM Staging Observation — Breast Cancer Stage IIB"
 Description: "TNM staging observation T2 N1 M0 for a breast cancer patient"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>TNM staging observation T2 N1 M0 for a breast cancer patient</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-tnm-staging-observation"
 * status = #final
 * code = SHAInterventionsCS#SHA-ONCOLOGY-CONSULT "SHA: Oncology Consultation"
@@ -74,6 +80,8 @@ InstanceOf: RECISTResponseAssessmentObservation
 Title: "Example RECIST Overall Response Assessment — Partial Response"
 Description: "RECIST response assessment after 2 cycles of chemotherapy"
 Usage: #example
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>RECIST response assessment after 2 cycles of chemotherapy</p></div>"
 * meta.profile = "https://nshr-uat.sha.go.ke/fhir/StructureDefinition/nccp-recist-response-assessment-observation"
 * status = #final
 * code.coding[0].system = "http://loinc.org"
