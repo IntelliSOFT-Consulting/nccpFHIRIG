@@ -3,10 +3,10 @@
 # │  Publisher: Digital Health Agency (DHA), Republic of Kenya                              │
 # ╰──────────────────────────────────────────────────────────────────────────────────────────╯
 
-id: fhir.ke.nccp
-canonical: https://nshr-uat.sha.go.ke/fhir
-name: KenyaNCCPIG
-title: "Kenya National Cancer Control Programme (NCCP) FHIR Implementation Guide"
+id: ke.fhir.nccp
+canonical: https://fhir.dha.go.ke/ig/nccp
+name: KenyaNCCP
+title: "Kenya National Cancer Control Programme (NCCP) Implementation Guide"
 description: >-
   FHIR R4 Implementation Guide for the Kenya National Cancer Control Programme (NCCP),
   developed by the Digital Health Agency (DHA) under the Ministry of Health, Republic of Kenya.
